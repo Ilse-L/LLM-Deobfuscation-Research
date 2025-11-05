@@ -1,0 +1,2385 @@
+scr_l0,scr_l1,scr_l2,scr_l3,cc_l0,cc_l1,cc_l2,cc_l3
+"from typing import List
+
+def task_id_0(numbers: List[float], threshold: float) -> bool:
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+    return False","from typing import List
+
+def task_id_0(var_bd90639107d434d0: List[float], var_398df760f8d8c549: float) -> bool:
+    for var_3868617adabb9cc3, var_c79650fb8f00f582 in enumerate(var_bd90639107d434d0):
+        for var_14738fc2bea2e051, var_f068c6cf8b47e464 in enumerate(var_bd90639107d434d0):
+            if var_3868617adabb9cc3 != var_14738fc2bea2e051:
+                var_2768453397c0e481 = abs(var_c79650fb8f00f582 - var_f068c6cf8b47e464)
+                if var_2768453397c0e481 < var_398df760f8d8c549:
+                    return True
+    return False","from typing import List
+
+def task_id_0(numbers: List[float], threshold: float) -> bool:
+    state_6876 = 0
+    while state_6876 < 2:
+        if state_6876 == 0:
+            for idx, elem in enumerate(numbers):
+                for idx2, elem2 in enumerate(numbers):
+                    if idx != idx2:
+                        distance = abs(elem - elem2)
+                        if distance < threshold:
+                            return True
+            state_6876 += 1
+        if state_6876 == 1:
+            return False
+            state_6876 += 1","from typing import List
+
+def task_id_0(var_bd90639107d434d0: List[float], var_398df760f8d8c549: float) -> bool:
+    state_4324 = 0
+    while state_4324 < 2:
+        if state_4324 == 0:
+            for var_3868617adabb9cc3, var_c79650fb8f00f582 in enumerate(var_bd90639107d434d0):
+                for var_14738fc2bea2e051, var_f068c6cf8b47e464 in enumerate(var_bd90639107d434d0):
+                    if var_3868617adabb9cc3 != var_14738fc2bea2e051:
+                        var_2768453397c0e481 = abs(var_c79650fb8f00f582 - var_f068c6cf8b47e464)
+                        if var_2768453397c0e481 < var_398df760f8d8c549:
+                            return True
+            state_4324 += 1
+        if state_4324 == 1:
+            return False
+            state_4324 += 1",5,5,8,8
+"from typing import List, Optional
+
+def task_id_1(strings: List[str]) -> Optional[str]:
+    if not strings:
+        return None
+    maxlen = max((len(x) for x in strings))
+    for s in strings:
+        if len(s) == maxlen:
+            return s","from typing import List, Optional
+
+def task_id_1(var_105b736e10038c70: List[str]) -> Optional[str]:
+    if not var_105b736e10038c70:
+        return None
+    var_9e6b8aa5aae07889 = max((len(var_e472c5e394f30ff8) for var_e472c5e394f30ff8 in var_105b736e10038c70))
+    for var_bc5ac4a37d609be4 in var_105b736e10038c70:
+        if len(var_bc5ac4a37d609be4) == var_9e6b8aa5aae07889:
+            return var_bc5ac4a37d609be4","from typing import List, Optional
+
+def task_id_1(strings: List[str]) -> Optional[str]:
+    state_5852 = 0
+    while state_5852 < 3:
+        if state_5852 == 0:
+            if not strings:
+                return None
+            state_5852 += 1
+        if state_5852 == 1:
+            maxlen = max((len(x) for x in strings))
+            state_5852 += 1
+        if state_5852 == 2:
+            for s in strings:
+                if len(s) == maxlen:
+                    return s
+            state_5852 += 1","from typing import List, Optional
+
+def task_id_1(var_105b736e10038c70: List[str]) -> Optional[str]:
+    state_6418 = 0
+    while state_6418 < 3:
+        if state_6418 == 0:
+            if not var_105b736e10038c70:
+                return None
+            state_6418 += 1
+        if state_6418 == 1:
+            var_9e6b8aa5aae07889 = max((len(var_e472c5e394f30ff8) for var_e472c5e394f30ff8 in var_105b736e10038c70))
+            state_6418 += 1
+        if state_6418 == 2:
+            for var_bc5ac4a37d609be4 in var_105b736e10038c70:
+                if len(var_bc5ac4a37d609be4) == var_9e6b8aa5aae07889:
+                    return var_bc5ac4a37d609be4
+            state_6418 += 1",5,5,9,9
+"def task_id_2(n):
+    if n < 2:
+        return False
+    for k in range(2, n - 1):
+        if n % k == 0:
+            return False
+    return True","def task_id_2(var_68f8ea7d3b0bd13e):
+    if var_68f8ea7d3b0bd13e < 2:
+        return False
+    for var_ac20c8330b5c6c16 in range(2, var_68f8ea7d3b0bd13e - 1):
+        if var_68f8ea7d3b0bd13e % var_ac20c8330b5c6c16 == 0:
+            return False
+    return True","def task_id_2(n):
+    state_7340 = 0
+    while state_7340 < 3:
+        if state_7340 == 0:
+            if n < 2:
+                return False
+            state_7340 += 1
+        if state_7340 == 1:
+            for k in range(2, n - 1):
+                if n % k == 0:
+                    return False
+            state_7340 += 1
+        if state_7340 == 2:
+            return True
+            state_7340 += 1","def task_id_2(var_68f8ea7d3b0bd13e):
+    state_8821 = 0
+    while state_8821 < 3:
+        if state_8821 == 0:
+            if var_68f8ea7d3b0bd13e < 2:
+                return False
+            state_8821 += 1
+        if state_8821 == 1:
+            for var_ac20c8330b5c6c16 in range(2, var_68f8ea7d3b0bd13e - 1):
+                if var_68f8ea7d3b0bd13e % var_ac20c8330b5c6c16 == 0:
+                    return False
+            state_8821 += 1
+        if state_8821 == 2:
+            return True
+            state_8821 += 1",4,4,8,8
+"def task_id_3(n: int):
+    ns = []
+    for i in range(n):
+        if i % 11 == 0 or i % 13 == 0:
+            ns.append(i)
+    s = ''.join(list(map(str, ns)))
+    ans = 0
+    for c in s:
+        ans += c == '7'
+    return ans","def task_id_3(var_68f8ea7d3b0bd13e: int):
+    var_7e8ebcb5bcf5e93a = []
+    for var_78ac692a457de231 in range(var_68f8ea7d3b0bd13e):
+        if var_78ac692a457de231 % 11 == 0 or var_78ac692a457de231 % 13 == 0:
+            var_7e8ebcb5bcf5e93a.append(var_78ac692a457de231)
+    var_bc5ac4a37d609be4 = ''.join(list(map(str, var_7e8ebcb5bcf5e93a)))
+    var_7e8e845eb38b31d3 = 0
+    for var_a5c1009bf9fce98b in var_bc5ac4a37d609be4:
+        var_7e8e845eb38b31d3 += var_a5c1009bf9fce98b == '7'
+    return var_7e8e845eb38b31d3","def task_id_3(n: int):
+    state_3733 = 0
+    while state_3733 < 6:
+        if state_3733 == 0:
+            ns = []
+            state_3733 += 1
+        if state_3733 == 1:
+            for i in range(n):
+                if i % 11 == 0 or i % 13 == 0:
+                    ns.append(i)
+            state_3733 += 1
+        if state_3733 == 2:
+            s = ''.join(list(map(str, ns)))
+            state_3733 += 1
+        if state_3733 == 3:
+            ans = 0
+            state_3733 += 1
+        if state_3733 == 4:
+            for c in s:
+                ans += c == '7'
+            state_3733 += 1
+        if state_3733 == 5:
+            return ans
+            state_3733 += 1","def task_id_3(var_68f8ea7d3b0bd13e: int):
+    state_1607 = 0
+    while state_1607 < 6:
+        if state_1607 == 0:
+            var_7e8ebcb5bcf5e93a = []
+            state_1607 += 1
+        if state_1607 == 1:
+            for var_78ac692a457de231 in range(var_68f8ea7d3b0bd13e):
+                if var_78ac692a457de231 % 11 == 0 or var_78ac692a457de231 % 13 == 0:
+                    var_7e8ebcb5bcf5e93a.append(var_78ac692a457de231)
+            state_1607 += 1
+        if state_1607 == 2:
+            var_bc5ac4a37d609be4 = ''.join(list(map(str, var_7e8ebcb5bcf5e93a)))
+            state_1607 += 1
+        if state_1607 == 3:
+            var_7e8e845eb38b31d3 = 0
+            state_1607 += 1
+        if state_1607 == 4:
+            for var_a5c1009bf9fce98b in var_bc5ac4a37d609be4:
+                var_7e8e845eb38b31d3 += var_a5c1009bf9fce98b == '7'
+            state_1607 += 1
+        if state_1607 == 5:
+            return var_7e8e845eb38b31d3
+            state_1607 += 1",5,5,12,12
+"def task_id_4(s: str):
+    """"""
+    returns encoded string by cycling groups of three characters.
+    """"""
+    groups = [s[3 * i:min(3 * i + 3, len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [group[1:] + group[0] if len(group) == 3 else group for group in groups]
+    return ''.join(groups)
+
+def task_id_4(s: str):
+    return encode_cyclic(encode_cyclic(s))","def task_id_4(var_bc5ac4a37d609be4: str):
+    """"""
+    returns encoded string by cycling groups of three characters.
+    """"""
+    var_1f8b46dcf50e8800 = [var_bc5ac4a37d609be4[3 * var_78ac692a457de231:min(3 * var_78ac692a457de231 + 3, len(var_bc5ac4a37d609be4))] for var_78ac692a457de231 in range((len(var_bc5ac4a37d609be4) + 2) // 3)]
+    var_1f8b46dcf50e8800 = [var_0c8a762689803f3a[1:] + var_0c8a762689803f3a[0] if len(var_0c8a762689803f3a) == 3 else var_0c8a762689803f3a for var_0c8a762689803f3a in var_1f8b46dcf50e8800]
+    return ''.join(var_1f8b46dcf50e8800)
+
+def task_id_4(var_bc5ac4a37d609be4: str):
+    return encode_cyclic(encode_cyclic(var_bc5ac4a37d609be4))","def task_id_4(s: str):
+    state_7986 = 0
+    while state_7986 < 4:
+        if state_7986 == 0:
+            '\n    returns encoded string by cycling groups of three characters.\n    '
+            state_7986 += 1
+        if state_7986 == 1:
+            groups = [s[3 * i:min(3 * i + 3, len(s))] for i in range((len(s) + 2) // 3)]
+            state_7986 += 1
+        if state_7986 == 2:
+            groups = [group[1:] + group[0] if len(group) == 3 else group for group in groups]
+            state_7986 += 1
+        if state_7986 == 3:
+            return ''.join(groups)
+            state_7986 += 1
+
+def task_id_4(s: str):
+    state_6484 = 0
+    while state_6484 < 1:
+        if state_6484 == 0:
+            return encode_cyclic(encode_cyclic(s))
+            state_6484 += 1","def task_id_4(var_bc5ac4a37d609be4: str):
+    state_9945 = 0
+    while state_9945 < 4:
+        if state_9945 == 0:
+            '\n    returns encoded string by cycling groups of three characters.\n    '
+            state_9945 += 1
+        if state_9945 == 1:
+            var_1f8b46dcf50e8800 = [var_bc5ac4a37d609be4[3 * var_78ac692a457de231:min(3 * var_78ac692a457de231 + 3, len(var_bc5ac4a37d609be4))] for var_78ac692a457de231 in range((len(var_bc5ac4a37d609be4) + 2) // 3)]
+            state_9945 += 1
+        if state_9945 == 2:
+            var_1f8b46dcf50e8800 = [var_0c8a762689803f3a[1:] + var_0c8a762689803f3a[0] if len(var_0c8a762689803f3a) == 3 else var_0c8a762689803f3a for var_0c8a762689803f3a in var_1f8b46dcf50e8800]
+            state_9945 += 1
+        if state_9945 == 3:
+            return ''.join(var_1f8b46dcf50e8800)
+            state_9945 += 1
+
+def task_id_4(var_bc5ac4a37d609be4: str):
+    state_8079 = 0
+    while state_8079 < 1:
+        if state_8079 == 0:
+            return encode_cyclic(encode_cyclic(var_bc5ac4a37d609be4))
+            state_8079 += 1",4,4,9,9
+"def task_id_5(l: list):
+    for i in range(len(l)):
+        for j in range(i + 1, len(l)):
+            for k in range(j + 1, len(l)):
+                if l[i] + l[j] + l[k] == 0:
+                    return True
+    return False","def task_id_5(var_5238d98fc5871541: list):
+    for var_78ac692a457de231 in range(len(var_5238d98fc5871541)):
+        for var_60e284f4daedb9f6 in range(var_78ac692a457de231 + 1, len(var_5238d98fc5871541)):
+            for var_ac20c8330b5c6c16 in range(var_60e284f4daedb9f6 + 1, len(var_5238d98fc5871541)):
+                if var_5238d98fc5871541[var_78ac692a457de231] + var_5238d98fc5871541[var_60e284f4daedb9f6] + var_5238d98fc5871541[var_ac20c8330b5c6c16] == 0:
+                    return True
+    return False","def task_id_5(l: list):
+    state_3254 = 0
+    while state_3254 < 2:
+        if state_3254 == 0:
+            for i in range(len(l)):
+                for j in range(i + 1, len(l)):
+                    for k in range(j + 1, len(l)):
+                        if l[i] + l[j] + l[k] == 0:
+                            return True
+            state_3254 += 1
+        if state_3254 == 1:
+            return False
+            state_3254 += 1","def task_id_5(var_5238d98fc5871541: list):
+    state_1719 = 0
+    while state_1719 < 2:
+        if state_1719 == 0:
+            for var_78ac692a457de231 in range(len(var_5238d98fc5871541)):
+                for var_60e284f4daedb9f6 in range(var_78ac692a457de231 + 1, len(var_5238d98fc5871541)):
+                    for var_ac20c8330b5c6c16 in range(var_60e284f4daedb9f6 + 1, len(var_5238d98fc5871541)):
+                        if var_5238d98fc5871541[var_78ac692a457de231] + var_5238d98fc5871541[var_60e284f4daedb9f6] + var_5238d98fc5871541[var_ac20c8330b5c6c16] == 0:
+                            return True
+            state_1719 += 1
+        if state_1719 == 1:
+            return False
+            state_1719 += 1",5,5,8,8
+"def task_id_6(l):
+    for i, l1 in enumerate(l):
+        for j in range(i + 1, len(l)):
+            if l1 + l[j] == 0:
+                return True
+    return False","def task_id_6(var_5238d98fc5871541):
+    for var_78ac692a457de231, var_5917a2321e43997f in enumerate(var_5238d98fc5871541):
+        for var_60e284f4daedb9f6 in range(var_78ac692a457de231 + 1, len(var_5238d98fc5871541)):
+            if var_5917a2321e43997f + var_5238d98fc5871541[var_60e284f4daedb9f6] == 0:
+                return True
+    return False","def task_id_6(l):
+    state_5686 = 0
+    while state_5686 < 2:
+        if state_5686 == 0:
+            for i, l1 in enumerate(l):
+                for j in range(i + 1, len(l)):
+                    if l1 + l[j] == 0:
+                        return True
+            state_5686 += 1
+        if state_5686 == 1:
+            return False
+            state_5686 += 1","def task_id_6(var_5238d98fc5871541):
+    state_1969 = 0
+    while state_1969 < 2:
+        if state_1969 == 0:
+            for var_78ac692a457de231, var_5917a2321e43997f in enumerate(var_5238d98fc5871541):
+                for var_60e284f4daedb9f6 in range(var_78ac692a457de231 + 1, len(var_5238d98fc5871541)):
+                    if var_5917a2321e43997f + var_5238d98fc5871541[var_60e284f4daedb9f6] == 0:
+                        return True
+            state_1969 += 1
+        if state_1969 == 1:
+            return False
+            state_1969 += 1",4,4,7,7
+"def task_id_7(brackets: str):
+    depth = 0
+    for b in brackets:
+        if b == '<':
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0","def task_id_7(var_bd95ff1bfa78c084: str):
+    var_9f071c94bc79a966 = 0
+    for var_f0ffa34335ef979f in var_bd95ff1bfa78c084:
+        if var_f0ffa34335ef979f == '<':
+            var_9f071c94bc79a966 += 1
+        else:
+            var_9f071c94bc79a966 -= 1
+        if var_9f071c94bc79a966 < 0:
+            return False
+    return var_9f071c94bc79a966 == 0","def task_id_7(brackets: str):
+    state_6458 = 0
+    while state_6458 < 3:
+        if state_6458 == 0:
+            depth = 0
+            state_6458 += 1
+        if state_6458 == 1:
+            for b in brackets:
+                if b == '<':
+                    depth += 1
+                else:
+                    depth -= 1
+                if depth < 0:
+                    return False
+            state_6458 += 1
+        if state_6458 == 2:
+            return depth == 0
+            state_6458 += 1","def task_id_7(var_bd95ff1bfa78c084: str):
+    state_2347 = 0
+    while state_2347 < 3:
+        if state_2347 == 0:
+            var_9f071c94bc79a966 = 0
+            state_2347 += 1
+        if state_2347 == 1:
+            for var_f0ffa34335ef979f in var_bd95ff1bfa78c084:
+                if var_f0ffa34335ef979f == '<':
+                    var_9f071c94bc79a966 += 1
+                else:
+                    var_9f071c94bc79a966 -= 1
+                if var_9f071c94bc79a966 < 0:
+                    return False
+            state_2347 += 1
+        if state_2347 == 2:
+            return var_9f071c94bc79a966 == 0
+            state_2347 += 1",4,4,8,8
+"def task_id_8(l1: list, l2: list):
+    ret = set()
+    for e1 in l1:
+        for e2 in l2:
+            if e1 == e2:
+                ret.add(e1)
+    return sorted(list(ret))","def task_id_8(var_5917a2321e43997f: list, var_ac68a0fcb4778dd0: list):
+    var_ef2d4d42a99b3851 = set()
+    for var_81fafba2552363fe in var_5917a2321e43997f:
+        for var_7783ed57a5353194 in var_ac68a0fcb4778dd0:
+            if var_81fafba2552363fe == var_7783ed57a5353194:
+                var_ef2d4d42a99b3851.add(var_81fafba2552363fe)
+    return sorted(list(var_ef2d4d42a99b3851))","def task_id_8(l1: list, l2: list):
+    state_7147 = 0
+    while state_7147 < 3:
+        if state_7147 == 0:
+            ret = set()
+            state_7147 += 1
+        if state_7147 == 1:
+            for e1 in l1:
+                for e2 in l2:
+                    if e1 == e2:
+                        ret.add(e1)
+            state_7147 += 1
+        if state_7147 == 2:
+            return sorted(list(ret))
+            state_7147 += 1","def task_id_8(var_5917a2321e43997f: list, var_ac68a0fcb4778dd0: list):
+    state_3524 = 0
+    while state_3524 < 3:
+        if state_3524 == 0:
+            var_ef2d4d42a99b3851 = set()
+            state_3524 += 1
+        if state_3524 == 1:
+            for var_81fafba2552363fe in var_5917a2321e43997f:
+                for var_7783ed57a5353194 in var_ac68a0fcb4778dd0:
+                    if var_81fafba2552363fe == var_7783ed57a5353194:
+                        var_ef2d4d42a99b3851.add(var_81fafba2552363fe)
+            state_3524 += 1
+        if state_3524 == 2:
+            return sorted(list(var_ef2d4d42a99b3851))
+            state_3524 += 1",4,4,8,8
+"def task_id_9(n: int):
+
+    def is_prime(k):
+        if k < 2:
+            return False
+        for i in range(2, k - 1):
+            if k % i == 0:
+                return False
+        return True
+    largest = 1
+    for j in range(2, n + 1):
+        if n % j == 0 and is_prime(j):
+            largest = max(largest, j)
+    return largest","def task_id_9(var_68f8ea7d3b0bd13e: int):
+
+    def is_prime(var_ac20c8330b5c6c16):
+        if var_ac20c8330b5c6c16 < 2:
+            return False
+        for var_78ac692a457de231 in range(2, var_ac20c8330b5c6c16 - 1):
+            if var_ac20c8330b5c6c16 % var_78ac692a457de231 == 0:
+                return False
+        return True
+    var_16d4f12f10406f5b = 1
+    for var_60e284f4daedb9f6 in range(2, var_68f8ea7d3b0bd13e + 1):
+        if var_68f8ea7d3b0bd13e % var_60e284f4daedb9f6 == 0 and is_prime(var_60e284f4daedb9f6):
+            var_16d4f12f10406f5b = max(var_16d4f12f10406f5b, var_60e284f4daedb9f6)
+    return var_16d4f12f10406f5b","def task_id_9(n: int):
+    state_2941 = 0
+    while state_2941 < 4:
+        if state_2941 == 0:
+
+            def is_prime(k):
+                state_9363 = 0
+                while state_9363 < 3:
+                    if state_9363 == 0:
+                        if k < 2:
+                            return False
+                        state_9363 += 1
+                    if state_9363 == 1:
+                        for i in range(2, k - 1):
+                            if k % i == 0:
+                                return False
+                        state_9363 += 1
+                    if state_9363 == 2:
+                        return True
+                        state_9363 += 1
+            state_2941 += 1
+        if state_2941 == 1:
+            largest = 1
+            state_2941 += 1
+        if state_2941 == 2:
+            for j in range(2, n + 1):
+                if n % j == 0 and is_prime(j):
+                    largest = max(largest, j)
+            state_2941 += 1
+        if state_2941 == 3:
+            return largest
+            state_2941 += 1","def task_id_9(var_68f8ea7d3b0bd13e: int):
+    state_6676 = 0
+    while state_6676 < 4:
+        if state_6676 == 0:
+
+            def is_prime(var_ac20c8330b5c6c16):
+                state_9947 = 0
+                while state_9947 < 3:
+                    if state_9947 == 0:
+                        if var_ac20c8330b5c6c16 < 2:
+                            return False
+                        state_9947 += 1
+                    if state_9947 == 1:
+                        for var_78ac692a457de231 in range(2, var_ac20c8330b5c6c16 - 1):
+                            if var_ac20c8330b5c6c16 % var_78ac692a457de231 == 0:
+                                return False
+                        state_9947 += 1
+                    if state_9947 == 2:
+                        return True
+                        state_9947 += 1
+            state_6676 += 1
+        if state_6676 == 1:
+            var_16d4f12f10406f5b = 1
+            state_6676 += 1
+        if state_6676 == 2:
+            for var_60e284f4daedb9f6 in range(2, var_68f8ea7d3b0bd13e + 1):
+                if var_68f8ea7d3b0bd13e % var_60e284f4daedb9f6 == 0 and is_prime(var_60e284f4daedb9f6):
+                    var_16d4f12f10406f5b = max(var_16d4f12f10406f5b, var_60e284f4daedb9f6)
+            state_6676 += 1
+        if state_6676 == 3:
+            return var_16d4f12f10406f5b
+            state_6676 += 1",4,4,8,8
+"def task_id_10(brackets: str):
+    depth = 0
+    for b in brackets:
+        if b == '(':
+            depth += 1
+        else:
+            depth -= 1
+        if depth < 0:
+            return False
+    return depth == 0","def task_id_10(var_bd95ff1bfa78c084: str):
+    var_9f071c94bc79a966 = 0
+    for var_f0ffa34335ef979f in var_bd95ff1bfa78c084:
+        if var_f0ffa34335ef979f == '(':
+            var_9f071c94bc79a966 += 1
+        else:
+            var_9f071c94bc79a966 -= 1
+        if var_9f071c94bc79a966 < 0:
+            return False
+    return var_9f071c94bc79a966 == 0","def task_id_10(brackets: str):
+    state_8767 = 0
+    while state_8767 < 3:
+        if state_8767 == 0:
+            depth = 0
+            state_8767 += 1
+        if state_8767 == 1:
+            for b in brackets:
+                if b == '(':
+                    depth += 1
+                else:
+                    depth -= 1
+                if depth < 0:
+                    return False
+            state_8767 += 1
+        if state_8767 == 2:
+            return depth == 0
+            state_8767 += 1","def task_id_10(var_bd95ff1bfa78c084: str):
+    state_2753 = 0
+    while state_2753 < 3:
+        if state_2753 == 0:
+            var_9f071c94bc79a966 = 0
+            state_2753 += 1
+        if state_2753 == 1:
+            for var_f0ffa34335ef979f in var_bd95ff1bfa78c084:
+                if var_f0ffa34335ef979f == '(':
+                    var_9f071c94bc79a966 += 1
+                else:
+                    var_9f071c94bc79a966 -= 1
+                if var_9f071c94bc79a966 < 0:
+                    return False
+            state_2753 += 1
+        if state_2753 == 2:
+            return var_9f071c94bc79a966 == 0
+            state_2753 += 1",4,4,8,8
+"def task_id_11(n: int):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 0
+    if n == 2:
+        return 1
+    return fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)","def task_id_11(var_68f8ea7d3b0bd13e: int):
+    if var_68f8ea7d3b0bd13e == 0:
+        return 0
+    if var_68f8ea7d3b0bd13e == 1:
+        return 0
+    if var_68f8ea7d3b0bd13e == 2:
+        return 1
+    return fibfib(var_68f8ea7d3b0bd13e - 1) + fibfib(var_68f8ea7d3b0bd13e - 2) + fibfib(var_68f8ea7d3b0bd13e - 3)","def task_id_11(n: int):
+    state_3915 = 0
+    while state_3915 < 4:
+        if state_3915 == 0:
+            if n == 0:
+                return 0
+            state_3915 += 1
+        if state_3915 == 1:
+            if n == 1:
+                return 0
+            state_3915 += 1
+        if state_3915 == 2:
+            if n == 2:
+                return 1
+            state_3915 += 1
+        if state_3915 == 3:
+            return fibfib(n - 1) + fibfib(n - 2) + fibfib(n - 3)
+            state_3915 += 1","def task_id_11(var_68f8ea7d3b0bd13e: int):
+    state_7295 = 0
+    while state_7295 < 4:
+        if state_7295 == 0:
+            if var_68f8ea7d3b0bd13e == 0:
+                return 0
+            state_7295 += 1
+        if state_7295 == 1:
+            if var_68f8ea7d3b0bd13e == 1:
+                return 0
+            state_7295 += 1
+        if state_7295 == 2:
+            if var_68f8ea7d3b0bd13e == 2:
+                return 1
+            state_7295 += 1
+        if state_7295 == 3:
+            return fibfib(var_68f8ea7d3b0bd13e - 1) + fibfib(var_68f8ea7d3b0bd13e - 2) + fibfib(var_68f8ea7d3b0bd13e - 3)
+            state_7295 += 1",4,4,9,9
+"FIX = '\nAdd more test cases.\n'
+
+def task_id_12(s):
+    vowels = 'aeiouAEIOU'
+    n_vowels = sum((c in vowels for c in s))
+    if s[-1] == 'y' or s[-1] == 'Y':
+        n_vowels += 1
+    return n_vowels","var_5abbd281216e90b2 = '\nAdd more test cases.\n'
+
+def task_id_12(var_bc5ac4a37d609be4):
+    var_1852cbd690aff551 = 'aeiouAEIOU'
+    var_2bf5e25aa53207bb = sum((var_a5c1009bf9fce98b in var_1852cbd690aff551 for var_a5c1009bf9fce98b in var_bc5ac4a37d609be4))
+    if var_bc5ac4a37d609be4[-1] == 'y' or var_bc5ac4a37d609be4[-1] == 'Y':
+        var_2bf5e25aa53207bb += 1
+    return var_2bf5e25aa53207bb","FIX = '\nAdd more test cases.\n'
+
+def task_id_12(s):
+    state_4437 = 0
+    while state_4437 < 4:
+        if state_4437 == 0:
+            vowels = 'aeiouAEIOU'
+            state_4437 += 1
+        if state_4437 == 1:
+            n_vowels = sum((c in vowels for c in s))
+            state_4437 += 1
+        if state_4437 == 2:
+            if s[-1] == 'y' or s[-1] == 'Y':
+                n_vowels += 1
+            state_4437 += 1
+        if state_4437 == 3:
+            return n_vowels
+            state_4437 += 1","var_5abbd281216e90b2 = '\nAdd more test cases.\n'
+
+def task_id_12(var_bc5ac4a37d609be4):
+    state_6495 = 0
+    while state_6495 < 4:
+        if state_6495 == 0:
+            var_1852cbd690aff551 = 'aeiouAEIOU'
+            state_6495 += 1
+        if state_6495 == 1:
+            var_2bf5e25aa53207bb = sum((var_a5c1009bf9fce98b in var_1852cbd690aff551 for var_a5c1009bf9fce98b in var_bc5ac4a37d609be4))
+            state_6495 += 1
+        if state_6495 == 2:
+            if var_bc5ac4a37d609be4[-1] == 'y' or var_bc5ac4a37d609be4[-1] == 'Y':
+                var_2bf5e25aa53207bb += 1
+            state_6495 += 1
+        if state_6495 == 3:
+            return var_2bf5e25aa53207bb
+            state_6495 += 1",4,4,9,9
+"def task_id_13(s):
+    if s == '':
+        return 0
+    return sum((ord(char) if char.isupper() else 0 for char in s))","def task_id_13(var_bc5ac4a37d609be4):
+    if var_bc5ac4a37d609be4 == '':
+        return 0
+    return sum((ord(var_1486b6a7cb5b3a83) if var_1486b6a7cb5b3a83.isupper() else 0 for var_1486b6a7cb5b3a83 in var_bc5ac4a37d609be4))","def task_id_13(s):
+    state_9019 = 0
+    while state_9019 < 2:
+        if state_9019 == 0:
+            if s == '':
+                return 0
+            state_9019 += 1
+        if state_9019 == 1:
+            return sum((ord(char) if char.isupper() else 0 for char in s))
+            state_9019 += 1","def task_id_13(var_bc5ac4a37d609be4):
+    state_4216 = 0
+    while state_4216 < 2:
+        if state_4216 == 0:
+            if var_bc5ac4a37d609be4 == '':
+                return 0
+            state_4216 += 1
+        if state_4216 == 1:
+            return sum((ord(var_1486b6a7cb5b3a83) if var_1486b6a7cb5b3a83.isupper() else 0 for var_1486b6a7cb5b3a83 in var_bc5ac4a37d609be4))
+            state_4216 += 1",4,4,7,7
+"def task_id_14(lst):
+    frq = [0] * (max(lst) + 1)
+    for i in lst:
+        frq[i] += 1
+    ans = -1
+    for i in range(1, len(frq)):
+        if frq[i] >= i:
+            ans = i
+    return ans","def task_id_14(var_898f776ec15790a6):
+    var_744503611764b6c4 = [0] * (max(var_898f776ec15790a6) + 1)
+    for var_78ac692a457de231 in var_898f776ec15790a6:
+        var_744503611764b6c4[var_78ac692a457de231] += 1
+    var_7e8e845eb38b31d3 = -1
+    for var_78ac692a457de231 in range(1, len(var_744503611764b6c4)):
+        if var_744503611764b6c4[var_78ac692a457de231] >= var_78ac692a457de231:
+            var_7e8e845eb38b31d3 = var_78ac692a457de231
+    return var_7e8e845eb38b31d3","def task_id_14(lst):
+    state_7347 = 0
+    while state_7347 < 5:
+        if state_7347 == 0:
+            frq = [0] * (max(lst) + 1)
+            state_7347 += 1
+        if state_7347 == 1:
+            for i in lst:
+                frq[i] += 1
+            state_7347 += 1
+        if state_7347 == 2:
+            ans = -1
+            state_7347 += 1
+        if state_7347 == 3:
+            for i in range(1, len(frq)):
+                if frq[i] >= i:
+                    ans = i
+            state_7347 += 1
+        if state_7347 == 4:
+            return ans
+            state_7347 += 1","def task_id_14(var_898f776ec15790a6):
+    state_7744 = 0
+    while state_7744 < 5:
+        if state_7744 == 0:
+            var_744503611764b6c4 = [0] * (max(var_898f776ec15790a6) + 1)
+            state_7744 += 1
+        if state_7744 == 1:
+            for var_78ac692a457de231 in var_898f776ec15790a6:
+                var_744503611764b6c4[var_78ac692a457de231] += 1
+            state_7744 += 1
+        if state_7744 == 2:
+            var_7e8e845eb38b31d3 = -1
+            state_7744 += 1
+        if state_7744 == 3:
+            for var_78ac692a457de231 in range(1, len(var_744503611764b6c4)):
+                if var_744503611764b6c4[var_78ac692a457de231] >= var_78ac692a457de231:
+                    var_7e8e845eb38b31d3 = var_78ac692a457de231
+            state_7744 += 1
+        if state_7744 == 4:
+            return var_7e8e845eb38b31d3
+            state_7744 += 1",4,4,10,10
+"def task_id_15(a, b, c):
+    if a + b <= c or a + c <= b or b + c <= a:
+        return -1
+    s = (a + b + c) / 2
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+    area = round(area, 2)
+    return area","def task_id_15(var_85c8de88d28866bf, var_f0ffa34335ef979f, var_a5c1009bf9fce98b):
+    if var_85c8de88d28866bf + var_f0ffa34335ef979f <= var_a5c1009bf9fce98b or var_85c8de88d28866bf + var_a5c1009bf9fce98b <= var_f0ffa34335ef979f or var_f0ffa34335ef979f + var_a5c1009bf9fce98b <= var_85c8de88d28866bf:
+        return -1
+    var_bc5ac4a37d609be4 = (var_85c8de88d28866bf + var_f0ffa34335ef979f + var_a5c1009bf9fce98b) / 2
+    var_07ab3c2399ff8ded = (var_bc5ac4a37d609be4 * (var_bc5ac4a37d609be4 - var_85c8de88d28866bf) * (var_bc5ac4a37d609be4 - var_f0ffa34335ef979f) * (var_bc5ac4a37d609be4 - var_a5c1009bf9fce98b)) ** 0.5
+    var_07ab3c2399ff8ded = round(var_07ab3c2399ff8ded, 2)
+    return var_07ab3c2399ff8ded","def task_id_15(a, b, c):
+    state_2709 = 0
+    while state_2709 < 5:
+        if state_2709 == 0:
+            if a + b <= c or a + c <= b or b + c <= a:
+                return -1
+            state_2709 += 1
+        if state_2709 == 1:
+            s = (a + b + c) / 2
+            state_2709 += 1
+        if state_2709 == 2:
+            area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+            state_2709 += 1
+        if state_2709 == 3:
+            area = round(area, 2)
+            state_2709 += 1
+        if state_2709 == 4:
+            return area
+            state_2709 += 1","def task_id_15(var_85c8de88d28866bf, var_f0ffa34335ef979f, var_a5c1009bf9fce98b):
+    state_6980 = 0
+    while state_6980 < 5:
+        if state_6980 == 0:
+            if var_85c8de88d28866bf + var_f0ffa34335ef979f <= var_a5c1009bf9fce98b or var_85c8de88d28866bf + var_a5c1009bf9fce98b <= var_f0ffa34335ef979f or var_f0ffa34335ef979f + var_a5c1009bf9fce98b <= var_85c8de88d28866bf:
+                return -1
+            state_6980 += 1
+        if state_6980 == 1:
+            var_bc5ac4a37d609be4 = (var_85c8de88d28866bf + var_f0ffa34335ef979f + var_a5c1009bf9fce98b) / 2
+            state_6980 += 1
+        if state_6980 == 2:
+            var_07ab3c2399ff8ded = (var_bc5ac4a37d609be4 * (var_bc5ac4a37d609be4 - var_85c8de88d28866bf) * (var_bc5ac4a37d609be4 - var_f0ffa34335ef979f) * (var_bc5ac4a37d609be4 - var_a5c1009bf9fce98b)) ** 0.5
+            state_6980 += 1
+        if state_6980 == 3:
+            var_07ab3c2399ff8ded = round(var_07ab3c2399ff8ded, 2)
+            state_6980 += 1
+        if state_6980 == 4:
+            return var_07ab3c2399ff8ded
+            state_6980 += 1",4,4,10,10
+"def task_id_16(q, w):
+    if sum(q) > w:
+        return False
+    i, j = (0, len(q) - 1)
+    while i < j:
+        if q[i] != q[j]:
+            return False
+        i += 1
+        j -= 1
+    return True","def task_id_16(var_87b8d13b05e63515, var_1e332829e1b27a67):
+    if sum(var_87b8d13b05e63515) > var_1e332829e1b27a67:
+        return False
+    var_78ac692a457de231, var_60e284f4daedb9f6 = (0, len(var_87b8d13b05e63515) - 1)
+    while var_78ac692a457de231 < var_60e284f4daedb9f6:
+        if var_87b8d13b05e63515[var_78ac692a457de231] != var_87b8d13b05e63515[var_60e284f4daedb9f6]:
+            return False
+        var_78ac692a457de231 += 1
+        var_60e284f4daedb9f6 -= 1
+    return True","def task_id_16(q, w):
+    state_7202 = 0
+    while state_7202 < 4:
+        if state_7202 == 0:
+            if sum(q) > w:
+                return False
+            state_7202 += 1
+        if state_7202 == 1:
+            i, j = (0, len(q) - 1)
+            state_7202 += 1
+        if state_7202 == 2:
+            while i < j:
+                if q[i] != q[j]:
+                    return False
+                i += 1
+                j -= 1
+            state_7202 += 1
+        if state_7202 == 3:
+            return True
+            state_7202 += 1","def task_id_16(var_87b8d13b05e63515, var_1e332829e1b27a67):
+    state_6786 = 0
+    while state_6786 < 4:
+        if state_6786 == 0:
+            if sum(var_87b8d13b05e63515) > var_1e332829e1b27a67:
+                return False
+            state_6786 += 1
+        if state_6786 == 1:
+            var_78ac692a457de231, var_60e284f4daedb9f6 = (0, len(var_87b8d13b05e63515) - 1)
+            state_6786 += 1
+        if state_6786 == 2:
+            while var_78ac692a457de231 < var_60e284f4daedb9f6:
+                if var_87b8d13b05e63515[var_78ac692a457de231] != var_87b8d13b05e63515[var_60e284f4daedb9f6]:
+                    return False
+                var_78ac692a457de231 += 1
+                var_60e284f4daedb9f6 -= 1
+            state_6786 += 1
+        if state_6786 == 3:
+            return True
+            state_6786 += 1",4,4,9,9
+"def task_id_17(lst1, lst2):
+    l1 = 0
+    for st in lst1:
+        l1 += len(st)
+    l2 = 0
+    for st in lst2:
+        l2 += len(st)
+    if l1 <= l2:
+        return lst1
+    else:
+        return lst2","def task_id_17(var_d99375560c0bdb61, var_b82fa754dc2057fd):
+    var_5917a2321e43997f = 0
+    for var_dee95c0597ea79f6 in var_d99375560c0bdb61:
+        var_5917a2321e43997f += len(var_dee95c0597ea79f6)
+    var_ac68a0fcb4778dd0 = 0
+    for var_dee95c0597ea79f6 in var_b82fa754dc2057fd:
+        var_ac68a0fcb4778dd0 += len(var_dee95c0597ea79f6)
+    if var_5917a2321e43997f <= var_ac68a0fcb4778dd0:
+        return var_d99375560c0bdb61
+    else:
+        return var_b82fa754dc2057fd","def task_id_17(lst1, lst2):
+    state_7589 = 0
+    while state_7589 < 5:
+        if state_7589 == 0:
+            l1 = 0
+            state_7589 += 1
+        if state_7589 == 1:
+            for st in lst1:
+                l1 += len(st)
+            state_7589 += 1
+        if state_7589 == 2:
+            l2 = 0
+            state_7589 += 1
+        if state_7589 == 3:
+            for st in lst2:
+                l2 += len(st)
+            state_7589 += 1
+        if state_7589 == 4:
+            if l1 <= l2:
+                return lst1
+            else:
+                return lst2
+            state_7589 += 1","def task_id_17(var_d99375560c0bdb61, var_b82fa754dc2057fd):
+    state_9190 = 0
+    while state_9190 < 5:
+        if state_9190 == 0:
+            var_5917a2321e43997f = 0
+            state_9190 += 1
+        if state_9190 == 1:
+            for var_dee95c0597ea79f6 in var_d99375560c0bdb61:
+                var_5917a2321e43997f += len(var_dee95c0597ea79f6)
+            state_9190 += 1
+        if state_9190 == 2:
+            var_ac68a0fcb4778dd0 = 0
+            state_9190 += 1
+        if state_9190 == 3:
+            for var_dee95c0597ea79f6 in var_b82fa754dc2057fd:
+                var_ac68a0fcb4778dd0 += len(var_dee95c0597ea79f6)
+            state_9190 += 1
+        if state_9190 == 4:
+            if var_5917a2321e43997f <= var_ac68a0fcb4778dd0:
+                return var_d99375560c0bdb61
+            else:
+                return var_b82fa754dc2057fd
+            state_9190 += 1",4,4,10,10
+"def task_id_18(s):
+    if len(s) < 3:
+        return False
+    for i in range(len(s) - 2):
+        if s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]:
+            return False
+    return True","def task_id_18(var_bc5ac4a37d609be4):
+    if len(var_bc5ac4a37d609be4) < 3:
+        return False
+    for var_78ac692a457de231 in range(len(var_bc5ac4a37d609be4) - 2):
+        if var_bc5ac4a37d609be4[var_78ac692a457de231] == var_bc5ac4a37d609be4[var_78ac692a457de231 + 1] or var_bc5ac4a37d609be4[var_78ac692a457de231 + 1] == var_bc5ac4a37d609be4[var_78ac692a457de231 + 2] or var_bc5ac4a37d609be4[var_78ac692a457de231] == var_bc5ac4a37d609be4[var_78ac692a457de231 + 2]:
+            return False
+    return True","def task_id_18(s):
+    state_1647 = 0
+    while state_1647 < 3:
+        if state_1647 == 0:
+            if len(s) < 3:
+                return False
+            state_1647 += 1
+        if state_1647 == 1:
+            for i in range(len(s) - 2):
+                if s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]:
+                    return False
+            state_1647 += 1
+        if state_1647 == 2:
+            return True
+            state_1647 += 1","def task_id_18(var_bc5ac4a37d609be4):
+    state_3930 = 0
+    while state_3930 < 3:
+        if state_3930 == 0:
+            if len(var_bc5ac4a37d609be4) < 3:
+                return False
+            state_3930 += 1
+        if state_3930 == 1:
+            for var_78ac692a457de231 in range(len(var_bc5ac4a37d609be4) - 2):
+                if var_bc5ac4a37d609be4[var_78ac692a457de231] == var_bc5ac4a37d609be4[var_78ac692a457de231 + 1] or var_bc5ac4a37d609be4[var_78ac692a457de231 + 1] == var_bc5ac4a37d609be4[var_78ac692a457de231 + 2] or var_bc5ac4a37d609be4[var_78ac692a457de231] == var_bc5ac4a37d609be4[var_78ac692a457de231 + 2]:
+                    return False
+            state_3930 += 1
+        if state_3930 == 2:
+            return True
+            state_3930 += 1",6,6,10,10
+"def task_id_19(string):
+    l = len(string)
+    if l == 0 or l == 1:
+        return False
+    for i in range(2, l):
+        if l % i == 0:
+            return False
+    return True","def task_id_19(var_c3c41d936d4ddf52):
+    var_5238d98fc5871541 = len(var_c3c41d936d4ddf52)
+    if var_5238d98fc5871541 == 0 or var_5238d98fc5871541 == 1:
+        return False
+    for var_78ac692a457de231 in range(2, var_5238d98fc5871541):
+        if var_5238d98fc5871541 % var_78ac692a457de231 == 0:
+            return False
+    return True","def task_id_19(string):
+    state_7314 = 0
+    while state_7314 < 4:
+        if state_7314 == 0:
+            l = len(string)
+            state_7314 += 1
+        if state_7314 == 1:
+            if l == 0 or l == 1:
+                return False
+            state_7314 += 1
+        if state_7314 == 2:
+            for i in range(2, l):
+                if l % i == 0:
+                    return False
+            state_7314 += 1
+        if state_7314 == 3:
+            return True
+            state_7314 += 1","def task_id_19(var_c3c41d936d4ddf52):
+    state_6578 = 0
+    while state_6578 < 4:
+        if state_6578 == 0:
+            var_5238d98fc5871541 = len(var_c3c41d936d4ddf52)
+            state_6578 += 1
+        if state_6578 == 1:
+            if var_5238d98fc5871541 == 0 or var_5238d98fc5871541 == 1:
+                return False
+            state_6578 += 1
+        if state_6578 == 2:
+            for var_78ac692a457de231 in range(2, var_5238d98fc5871541):
+                if var_5238d98fc5871541 % var_78ac692a457de231 == 0:
+                    return False
+            state_6578 += 1
+        if state_6578 == 3:
+            return True
+            state_6578 += 1",5,5,10,10
+"def task_id_20(lst, x):
+    coords = [(i, j) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j] == x]
+    return sorted(sorted(coords, key=lambda x: x[1], reverse=True), key=lambda x: x[0])","def task_id_20(var_898f776ec15790a6, var_e472c5e394f30ff8):
+    var_5442ffb9af1614b0 = [(var_78ac692a457de231, var_60e284f4daedb9f6) for var_78ac692a457de231 in range(len(var_898f776ec15790a6)) for var_60e284f4daedb9f6 in range(len(var_898f776ec15790a6[var_78ac692a457de231])) if var_898f776ec15790a6[var_78ac692a457de231][var_60e284f4daedb9f6] == var_e472c5e394f30ff8]
+    return sorted(sorted(var_5442ffb9af1614b0, key=lambda var_e472c5e394f30ff8: var_e472c5e394f30ff8[1], reverse=True), key=lambda var_e472c5e394f30ff8: var_e472c5e394f30ff8[0])","def task_id_20(lst, x):
+    state_1027 = 0
+    while state_1027 < 2:
+        if state_1027 == 0:
+            coords = [(i, j) for i in range(len(lst)) for j in range(len(lst[i])) if lst[i][j] == x]
+            state_1027 += 1
+        if state_1027 == 1:
+            return sorted(sorted(coords, key=lambda x: x[1], reverse=True), key=lambda x: x[0])
+            state_1027 += 1","def task_id_20(var_898f776ec15790a6, var_e472c5e394f30ff8):
+    state_7865 = 0
+    while state_7865 < 2:
+        if state_7865 == 0:
+            var_5442ffb9af1614b0 = [(var_78ac692a457de231, var_60e284f4daedb9f6) for var_78ac692a457de231 in range(len(var_898f776ec15790a6)) for var_60e284f4daedb9f6 in range(len(var_898f776ec15790a6[var_78ac692a457de231])) if var_898f776ec15790a6[var_78ac692a457de231][var_60e284f4daedb9f6] == var_e472c5e394f30ff8]
+            state_7865 += 1
+        if state_7865 == 1:
+            return sorted(sorted(var_5442ffb9af1614b0, key=lambda var_e472c5e394f30ff8: var_e472c5e394f30ff8[1], reverse=True), key=lambda var_e472c5e394f30ff8: var_e472c5e394f30ff8[0])
+            state_7865 += 1",4,4,7,7
+"def task_id_21(x, y, z):
+    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):
+        if x + y == z or x + z == y or y + z == x:
+            return True
+        return False
+    return False","def task_id_21(var_e472c5e394f30ff8, var_4cccd98df122b073, var_bb66897ef6ac6cbc):
+    if isinstance(var_e472c5e394f30ff8, int) and isinstance(var_4cccd98df122b073, int) and isinstance(var_bb66897ef6ac6cbc, int):
+        if var_e472c5e394f30ff8 + var_4cccd98df122b073 == var_bb66897ef6ac6cbc or var_e472c5e394f30ff8 + var_bb66897ef6ac6cbc == var_4cccd98df122b073 or var_4cccd98df122b073 + var_bb66897ef6ac6cbc == var_e472c5e394f30ff8:
+            return True
+        return False
+    return False","def task_id_21(x, y, z):
+    state_6332 = 0
+    while state_6332 < 2:
+        if state_6332 == 0:
+            if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):
+                if x + y == z or x + z == y or y + z == x:
+                    return True
+                return False
+            state_6332 += 1
+        if state_6332 == 1:
+            return False
+            state_6332 += 1","def task_id_21(var_e472c5e394f30ff8, var_4cccd98df122b073, var_bb66897ef6ac6cbc):
+    state_2388 = 0
+    while state_2388 < 2:
+        if state_2388 == 0:
+            if isinstance(var_e472c5e394f30ff8, int) and isinstance(var_4cccd98df122b073, int) and isinstance(var_bb66897ef6ac6cbc, int):
+                if var_e472c5e394f30ff8 + var_4cccd98df122b073 == var_bb66897ef6ac6cbc or var_e472c5e394f30ff8 + var_bb66897ef6ac6cbc == var_4cccd98df122b073 or var_4cccd98df122b073 + var_bb66897ef6ac6cbc == var_e472c5e394f30ff8:
+                    return True
+                return False
+            state_2388 += 1
+        if state_2388 == 1:
+            return False
+            state_2388 += 1",7,7,10,10
+"def task_id_22(message):
+    vowels = 'aeiouAEIOU'
+    vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+    message = message.swapcase()
+    return ''.join([vowels_replace[i] if i in vowels else i for i in message])","def task_id_22(var_91704d0d76e0c4e2):
+    var_1852cbd690aff551 = 'aeiouAEIOU'
+    var_f3153d8615874990 = dict([(var_78ac692a457de231, chr(ord(var_78ac692a457de231) + 2)) for var_78ac692a457de231 in var_1852cbd690aff551])
+    var_91704d0d76e0c4e2 = var_91704d0d76e0c4e2.swapcase()
+    return ''.join([var_f3153d8615874990[var_78ac692a457de231] if var_78ac692a457de231 in var_1852cbd690aff551 else var_78ac692a457de231 for var_78ac692a457de231 in var_91704d0d76e0c4e2])","def task_id_22(message):
+    state_3233 = 0
+    while state_3233 < 4:
+        if state_3233 == 0:
+            vowels = 'aeiouAEIOU'
+            state_3233 += 1
+        if state_3233 == 1:
+            vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])
+            state_3233 += 1
+        if state_3233 == 2:
+            message = message.swapcase()
+            state_3233 += 1
+        if state_3233 == 3:
+            return ''.join([vowels_replace[i] if i in vowels else i for i in message])
+            state_3233 += 1","def task_id_22(var_91704d0d76e0c4e2):
+    state_8632 = 0
+    while state_8632 < 4:
+        if state_8632 == 0:
+            var_1852cbd690aff551 = 'aeiouAEIOU'
+            state_8632 += 1
+        if state_8632 == 1:
+            var_f3153d8615874990 = dict([(var_78ac692a457de231, chr(ord(var_78ac692a457de231) + 2)) for var_78ac692a457de231 in var_1852cbd690aff551])
+            state_8632 += 1
+        if state_8632 == 2:
+            var_91704d0d76e0c4e2 = var_91704d0d76e0c4e2.swapcase()
+            state_8632 += 1
+        if state_8632 == 3:
+            return ''.join([var_f3153d8615874990[var_78ac692a457de231] if var_78ac692a457de231 in var_1852cbd690aff551 else var_78ac692a457de231 for var_78ac692a457de231 in var_91704d0d76e0c4e2])
+            state_8632 += 1",4,4,9,9
+"def task_id_23(n):
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, i):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes","def task_id_23(var_68f8ea7d3b0bd13e):
+    var_06df91b274de1703 = []
+    for var_78ac692a457de231 in range(2, var_68f8ea7d3b0bd13e):
+        var_0aa718e33e9ed8a1 = True
+        for var_60e284f4daedb9f6 in range(2, var_78ac692a457de231):
+            if var_78ac692a457de231 % var_60e284f4daedb9f6 == 0:
+                var_0aa718e33e9ed8a1 = False
+                break
+        if var_0aa718e33e9ed8a1:
+            var_06df91b274de1703.append(var_78ac692a457de231)
+    return var_06df91b274de1703","def task_id_23(n):
+    state_9878 = 0
+    while state_9878 < 3:
+        if state_9878 == 0:
+            primes = []
+            state_9878 += 1
+        if state_9878 == 1:
+            for i in range(2, n):
+                is_prime = True
+                for j in range(2, i):
+                    if i % j == 0:
+                        is_prime = False
+                        break
+                if is_prime:
+                    primes.append(i)
+            state_9878 += 1
+        if state_9878 == 2:
+            return primes
+            state_9878 += 1","def task_id_23(var_68f8ea7d3b0bd13e):
+    state_6617 = 0
+    while state_6617 < 3:
+        if state_6617 == 0:
+            var_06df91b274de1703 = []
+            state_6617 += 1
+        if state_6617 == 1:
+            for var_78ac692a457de231 in range(2, var_68f8ea7d3b0bd13e):
+                var_0aa718e33e9ed8a1 = True
+                for var_60e284f4daedb9f6 in range(2, var_78ac692a457de231):
+                    if var_78ac692a457de231 % var_60e284f4daedb9f6 == 0:
+                        var_0aa718e33e9ed8a1 = False
+                        break
+                if var_0aa718e33e9ed8a1:
+                    var_06df91b274de1703.append(var_78ac692a457de231)
+            state_6617 += 1
+        if state_6617 == 2:
+            return var_06df91b274de1703
+            state_6617 += 1",5,5,9,9
+"def task_id_24(s):
+    if not s:
+        return []
+    s_list = []
+    for letter in s:
+        if letter == ',':
+            s_list.append(' ')
+        else:
+            s_list.append(letter)
+    s_list = ''.join(s_list)
+    return s_list.split()","def task_id_24(var_bc5ac4a37d609be4):
+    if not var_bc5ac4a37d609be4:
+        return []
+    var_635c8a930f446d49 = []
+    for var_40faaaefe6d94c8d in var_bc5ac4a37d609be4:
+        if var_40faaaefe6d94c8d == ',':
+            var_635c8a930f446d49.append(' ')
+        else:
+            var_635c8a930f446d49.append(var_40faaaefe6d94c8d)
+    var_635c8a930f446d49 = ''.join(var_635c8a930f446d49)
+    return var_635c8a930f446d49.split()","def task_id_24(s):
+    state_7616 = 0
+    while state_7616 < 5:
+        if state_7616 == 0:
+            if not s:
+                return []
+            state_7616 += 1
+        if state_7616 == 1:
+            s_list = []
+            state_7616 += 1
+        if state_7616 == 2:
+            for letter in s:
+                if letter == ',':
+                    s_list.append(' ')
+                else:
+                    s_list.append(letter)
+            state_7616 += 1
+        if state_7616 == 3:
+            s_list = ''.join(s_list)
+            state_7616 += 1
+        if state_7616 == 4:
+            return s_list.split()
+            state_7616 += 1","def task_id_24(var_bc5ac4a37d609be4):
+    state_4231 = 0
+    while state_4231 < 5:
+        if state_4231 == 0:
+            if not var_bc5ac4a37d609be4:
+                return []
+            state_4231 += 1
+        if state_4231 == 1:
+            var_635c8a930f446d49 = []
+            state_4231 += 1
+        if state_4231 == 2:
+            for var_40faaaefe6d94c8d in var_bc5ac4a37d609be4:
+                if var_40faaaefe6d94c8d == ',':
+                    var_635c8a930f446d49.append(' ')
+                else:
+                    var_635c8a930f446d49.append(var_40faaaefe6d94c8d)
+            state_4231 += 1
+        if state_4231 == 3:
+            var_635c8a930f446d49 = ''.join(var_635c8a930f446d49)
+            state_4231 += 1
+        if state_4231 == 4:
+            return var_635c8a930f446d49.split()
+            state_4231 += 1",4,4,10,10
+"def task_id_25(x, y):
+    if x > y:
+        return -1
+    if y % 2 == 0:
+        return y
+    if x == y:
+        return -1
+    return y - 1","def task_id_25(var_e472c5e394f30ff8, var_4cccd98df122b073):
+    if var_e472c5e394f30ff8 > var_4cccd98df122b073:
+        return -1
+    if var_4cccd98df122b073 % 2 == 0:
+        return var_4cccd98df122b073
+    if var_e472c5e394f30ff8 == var_4cccd98df122b073:
+        return -1
+    return var_4cccd98df122b073 - 1","def task_id_25(x, y):
+    state_2265 = 0
+    while state_2265 < 4:
+        if state_2265 == 0:
+            if x > y:
+                return -1
+            state_2265 += 1
+        if state_2265 == 1:
+            if y % 2 == 0:
+                return y
+            state_2265 += 1
+        if state_2265 == 2:
+            if x == y:
+                return -1
+            state_2265 += 1
+        if state_2265 == 3:
+            return y - 1
+            state_2265 += 1","def task_id_25(var_e472c5e394f30ff8, var_4cccd98df122b073):
+    state_3691 = 0
+    while state_3691 < 4:
+        if state_3691 == 0:
+            if var_e472c5e394f30ff8 > var_4cccd98df122b073:
+                return -1
+            state_3691 += 1
+        if state_3691 == 1:
+            if var_4cccd98df122b073 % 2 == 0:
+                return var_4cccd98df122b073
+            state_3691 += 1
+        if state_3691 == 2:
+            if var_e472c5e394f30ff8 == var_4cccd98df122b073:
+                return -1
+            state_3691 += 1
+        if state_3691 == 3:
+            return var_4cccd98df122b073 - 1
+            state_3691 += 1",4,4,9,9
+"def task_id_26(x):
+    odd_digit_elements = []
+    for i in x:
+        if all((int(c) % 2 == 1 for c in str(i))):
+            odd_digit_elements.append(i)
+    return sorted(odd_digit_elements)","def task_id_26(var_e472c5e394f30ff8):
+    var_759462a3f2d6178c = []
+    for var_78ac692a457de231 in var_e472c5e394f30ff8:
+        if all((int(var_a5c1009bf9fce98b) % 2 == 1 for var_a5c1009bf9fce98b in str(var_78ac692a457de231))):
+            var_759462a3f2d6178c.append(var_78ac692a457de231)
+    return sorted(var_759462a3f2d6178c)","def task_id_26(x):
+    state_8745 = 0
+    while state_8745 < 3:
+        if state_8745 == 0:
+            odd_digit_elements = []
+            state_8745 += 1
+        if state_8745 == 1:
+            for i in x:
+                if all((int(c) % 2 == 1 for c in str(i))):
+                    odd_digit_elements.append(i)
+            state_8745 += 1
+        if state_8745 == 2:
+            return sorted(odd_digit_elements)
+            state_8745 += 1","def task_id_26(var_e472c5e394f30ff8):
+    state_9445 = 0
+    while state_9445 < 3:
+        if state_9445 == 0:
+            var_759462a3f2d6178c = []
+            state_9445 += 1
+        if state_9445 == 1:
+            for var_78ac692a457de231 in var_e472c5e394f30ff8:
+                if all((int(var_a5c1009bf9fce98b) % 2 == 1 for var_a5c1009bf9fce98b in str(var_78ac692a457de231))):
+                    var_759462a3f2d6178c.append(var_78ac692a457de231)
+            state_9445 += 1
+        if state_9445 == 2:
+            return sorted(var_759462a3f2d6178c)
+            state_9445 += 1",4,4,8,8
+"def task_id_27(n):
+    ret = []
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            x = 1
+            for j in range(1, i + 1):
+                x *= j
+            ret += [x]
+        else:
+            x = 0
+            for j in range(1, i + 1):
+                x += j
+            ret += [x]
+    return ret","def task_id_27(var_68f8ea7d3b0bd13e):
+    var_ef2d4d42a99b3851 = []
+    for var_78ac692a457de231 in range(1, var_68f8ea7d3b0bd13e + 1):
+        if var_78ac692a457de231 % 2 == 0:
+            var_e472c5e394f30ff8 = 1
+            for var_60e284f4daedb9f6 in range(1, var_78ac692a457de231 + 1):
+                var_e472c5e394f30ff8 *= var_60e284f4daedb9f6
+            var_ef2d4d42a99b3851 += [var_e472c5e394f30ff8]
+        else:
+            var_e472c5e394f30ff8 = 0
+            for var_60e284f4daedb9f6 in range(1, var_78ac692a457de231 + 1):
+                var_e472c5e394f30ff8 += var_60e284f4daedb9f6
+            var_ef2d4d42a99b3851 += [var_e472c5e394f30ff8]
+    return var_ef2d4d42a99b3851","def task_id_27(n):
+    state_2877 = 0
+    while state_2877 < 3:
+        if state_2877 == 0:
+            ret = []
+            state_2877 += 1
+        if state_2877 == 1:
+            for i in range(1, n + 1):
+                if i % 2 == 0:
+                    x = 1
+                    for j in range(1, i + 1):
+                        x *= j
+                    ret += [x]
+                else:
+                    x = 0
+                    for j in range(1, i + 1):
+                        x += j
+                    ret += [x]
+            state_2877 += 1
+        if state_2877 == 2:
+            return ret
+            state_2877 += 1","def task_id_27(var_68f8ea7d3b0bd13e):
+    state_4379 = 0
+    while state_4379 < 3:
+        if state_4379 == 0:
+            var_ef2d4d42a99b3851 = []
+            state_4379 += 1
+        if state_4379 == 1:
+            for var_78ac692a457de231 in range(1, var_68f8ea7d3b0bd13e + 1):
+                if var_78ac692a457de231 % 2 == 0:
+                    var_e472c5e394f30ff8 = 1
+                    for var_60e284f4daedb9f6 in range(1, var_78ac692a457de231 + 1):
+                        var_e472c5e394f30ff8 *= var_60e284f4daedb9f6
+                    var_ef2d4d42a99b3851 += [var_e472c5e394f30ff8]
+                else:
+                    var_e472c5e394f30ff8 = 0
+                    for var_60e284f4daedb9f6 in range(1, var_78ac692a457de231 + 1):
+                        var_e472c5e394f30ff8 += var_60e284f4daedb9f6
+                    var_ef2d4d42a99b3851 += [var_e472c5e394f30ff8]
+            state_4379 += 1
+        if state_4379 == 2:
+            return var_ef2d4d42a99b3851
+            state_4379 += 1",5,5,9,9
+"def task_id_28(arr):
+    if len(arr) == 0:
+        return True
+    sorted_array = sorted(arr)
+    my_arr = []
+    min_value = min(arr)
+    min_index = arr.index(min_value)
+    my_arr = arr[min_index:] + arr[0:min_index]
+    for i in range(len(arr)):
+        if my_arr[i] != sorted_array[i]:
+            return False
+    return True","def task_id_28(var_0239d166a22ea7af):
+    if len(var_0239d166a22ea7af) == 0:
+        return True
+    var_2efcc4cc04c49c71 = sorted(var_0239d166a22ea7af)
+    var_640117a04708d152 = []
+    var_a38fbd5eb5c98598 = min(var_0239d166a22ea7af)
+    var_35885fad0ecdeec6 = var_0239d166a22ea7af.index(var_a38fbd5eb5c98598)
+    var_640117a04708d152 = var_0239d166a22ea7af[var_35885fad0ecdeec6:] + var_0239d166a22ea7af[0:var_35885fad0ecdeec6]
+    for var_78ac692a457de231 in range(len(var_0239d166a22ea7af)):
+        if var_640117a04708d152[var_78ac692a457de231] != var_2efcc4cc04c49c71[var_78ac692a457de231]:
+            return False
+    return True","def task_id_28(arr):
+    state_7512 = 0
+    while state_7512 < 8:
+        if state_7512 == 0:
+            if len(arr) == 0:
+                return True
+            state_7512 += 1
+        if state_7512 == 1:
+            sorted_array = sorted(arr)
+            state_7512 += 1
+        if state_7512 == 2:
+            my_arr = []
+            state_7512 += 1
+        if state_7512 == 3:
+            min_value = min(arr)
+            state_7512 += 1
+        if state_7512 == 4:
+            min_index = arr.index(min_value)
+            state_7512 += 1
+        if state_7512 == 5:
+            my_arr = arr[min_index:] + arr[0:min_index]
+            state_7512 += 1
+        if state_7512 == 6:
+            for i in range(len(arr)):
+                if my_arr[i] != sorted_array[i]:
+                    return False
+            state_7512 += 1
+        if state_7512 == 7:
+            return True
+            state_7512 += 1","def task_id_28(var_0239d166a22ea7af):
+    state_6212 = 0
+    while state_6212 < 8:
+        if state_6212 == 0:
+            if len(var_0239d166a22ea7af) == 0:
+                return True
+            state_6212 += 1
+        if state_6212 == 1:
+            var_2efcc4cc04c49c71 = sorted(var_0239d166a22ea7af)
+            state_6212 += 1
+        if state_6212 == 2:
+            var_640117a04708d152 = []
+            state_6212 += 1
+        if state_6212 == 3:
+            var_a38fbd5eb5c98598 = min(var_0239d166a22ea7af)
+            state_6212 += 1
+        if state_6212 == 4:
+            var_35885fad0ecdeec6 = var_0239d166a22ea7af.index(var_a38fbd5eb5c98598)
+            state_6212 += 1
+        if state_6212 == 5:
+            var_640117a04708d152 = var_0239d166a22ea7af[var_35885fad0ecdeec6:] + var_0239d166a22ea7af[0:var_35885fad0ecdeec6]
+            state_6212 += 1
+        if state_6212 == 6:
+            for var_78ac692a457de231 in range(len(var_0239d166a22ea7af)):
+                if var_640117a04708d152[var_78ac692a457de231] != var_2efcc4cc04c49c71[var_78ac692a457de231]:
+                    return False
+            state_6212 += 1
+        if state_6212 == 7:
+            return True
+            state_6212 += 1",4,4,13,13
+"def task_id_29(lst1, lst2):
+    odd = 0
+    even = 0
+    for i in lst1:
+        if i % 2 == 1:
+            odd += 1
+    for i in lst2:
+        if i % 2 == 0:
+            even += 1
+    if even >= odd:
+        return 'YES'
+    return 'NO'","def task_id_29(var_d99375560c0bdb61, var_b82fa754dc2057fd):
+    var_c17c557f92a321ec = 0
+    var_ea9797579076f8c3 = 0
+    for var_78ac692a457de231 in var_d99375560c0bdb61:
+        if var_78ac692a457de231 % 2 == 1:
+            var_c17c557f92a321ec += 1
+    for var_78ac692a457de231 in var_b82fa754dc2057fd:
+        if var_78ac692a457de231 % 2 == 0:
+            var_ea9797579076f8c3 += 1
+    if var_ea9797579076f8c3 >= var_c17c557f92a321ec:
+        return 'YES'
+    return 'NO'","def task_id_29(lst1, lst2):
+    state_4613 = 0
+    while state_4613 < 6:
+        if state_4613 == 0:
+            odd = 0
+            state_4613 += 1
+        if state_4613 == 1:
+            even = 0
+            state_4613 += 1
+        if state_4613 == 2:
+            for i in lst1:
+                if i % 2 == 1:
+                    odd += 1
+            state_4613 += 1
+        if state_4613 == 3:
+            for i in lst2:
+                if i % 2 == 0:
+                    even += 1
+            state_4613 += 1
+        if state_4613 == 4:
+            if even >= odd:
+                return 'YES'
+            state_4613 += 1
+        if state_4613 == 5:
+            return 'NO'
+            state_4613 += 1","def task_id_29(var_d99375560c0bdb61, var_b82fa754dc2057fd):
+    state_5312 = 0
+    while state_5312 < 6:
+        if state_5312 == 0:
+            var_c17c557f92a321ec = 0
+            state_5312 += 1
+        if state_5312 == 1:
+            var_ea9797579076f8c3 = 0
+            state_5312 += 1
+        if state_5312 == 2:
+            for var_78ac692a457de231 in var_d99375560c0bdb61:
+                if var_78ac692a457de231 % 2 == 1:
+                    var_c17c557f92a321ec += 1
+            state_5312 += 1
+        if state_5312 == 3:
+            for var_78ac692a457de231 in var_b82fa754dc2057fd:
+                if var_78ac692a457de231 % 2 == 0:
+                    var_ea9797579076f8c3 += 1
+            state_5312 += 1
+        if state_5312 == 4:
+            if var_ea9797579076f8c3 >= var_c17c557f92a321ec:
+                return 'YES'
+            state_5312 += 1
+        if state_5312 == 5:
+            return 'NO'
+            state_5312 += 1",6,6,13,13
+"def task_id_30(test):
+    dict1 = {}
+    list1 = test.split(' ')
+    t = 0
+    for i in list1:
+        if list1.count(i) > t and i != '':
+            t = list1.count(i)
+    if t > 0:
+        for i in list1:
+            if list1.count(i) == t:
+                dict1[i] = t
+    return dict1","def task_id_30(var_d3b0aa9cd8b72556):
+    var_549303cbbb8dfbc9 = {}
+    var_bcadd8c8427ecfbd = var_d3b0aa9cd8b72556.split(' ')
+    var_ef012cb5d92b6510 = 0
+    for var_78ac692a457de231 in var_bcadd8c8427ecfbd:
+        if var_bcadd8c8427ecfbd.count(var_78ac692a457de231) > var_ef012cb5d92b6510 and var_78ac692a457de231 != '':
+            var_ef012cb5d92b6510 = var_bcadd8c8427ecfbd.count(var_78ac692a457de231)
+    if var_ef012cb5d92b6510 > 0:
+        for var_78ac692a457de231 in var_bcadd8c8427ecfbd:
+            if var_bcadd8c8427ecfbd.count(var_78ac692a457de231) == var_ef012cb5d92b6510:
+                var_549303cbbb8dfbc9[var_78ac692a457de231] = var_ef012cb5d92b6510
+    return var_549303cbbb8dfbc9","def task_id_30(test):
+    state_1341 = 0
+    while state_1341 < 6:
+        if state_1341 == 0:
+            dict1 = {}
+            state_1341 += 1
+        if state_1341 == 1:
+            list1 = test.split(' ')
+            state_1341 += 1
+        if state_1341 == 2:
+            t = 0
+            state_1341 += 1
+        if state_1341 == 3:
+            for i in list1:
+                if list1.count(i) > t and i != '':
+                    t = list1.count(i)
+            state_1341 += 1
+        if state_1341 == 4:
+            if t > 0:
+                for i in list1:
+                    if list1.count(i) == t:
+                        dict1[i] = t
+            state_1341 += 1
+        if state_1341 == 5:
+            return dict1
+            state_1341 += 1","def task_id_30(var_d3b0aa9cd8b72556):
+    state_1413 = 0
+    while state_1413 < 6:
+        if state_1413 == 0:
+            var_549303cbbb8dfbc9 = {}
+            state_1413 += 1
+        if state_1413 == 1:
+            var_bcadd8c8427ecfbd = var_d3b0aa9cd8b72556.split(' ')
+            state_1413 += 1
+        if state_1413 == 2:
+            var_ef012cb5d92b6510 = 0
+            state_1413 += 1
+        if state_1413 == 3:
+            for var_78ac692a457de231 in var_bcadd8c8427ecfbd:
+                if var_bcadd8c8427ecfbd.count(var_78ac692a457de231) > var_ef012cb5d92b6510 and var_78ac692a457de231 != '':
+                    var_ef012cb5d92b6510 = var_bcadd8c8427ecfbd.count(var_78ac692a457de231)
+            state_1413 += 1
+        if state_1413 == 4:
+            if var_ef012cb5d92b6510 > 0:
+                for var_78ac692a457de231 in var_bcadd8c8427ecfbd:
+                    if var_bcadd8c8427ecfbd.count(var_78ac692a457de231) == var_ef012cb5d92b6510:
+                        var_549303cbbb8dfbc9[var_78ac692a457de231] = var_ef012cb5d92b6510
+            state_1413 += 1
+        if state_1413 == 5:
+            return var_549303cbbb8dfbc9
+            state_1413 += 1",7,7,14,14
+"def task_id_31(nums):
+    max_sum = 0
+    s = 0
+    for num in nums:
+        s += -num
+        if s < 0:
+            s = 0
+        max_sum = max(s, max_sum)
+    if max_sum == 0:
+        max_sum = max((-i for i in nums))
+    min_sum = -max_sum
+    return min_sum","def task_id_31(var_ece68b1c59b3b0e0):
+    var_b3b0478775da6eb0 = 0
+    var_bc5ac4a37d609be4 = 0
+    for var_b6c8956926a2b368 in var_ece68b1c59b3b0e0:
+        var_bc5ac4a37d609be4 += -var_b6c8956926a2b368
+        if var_bc5ac4a37d609be4 < 0:
+            var_bc5ac4a37d609be4 = 0
+        var_b3b0478775da6eb0 = max(var_bc5ac4a37d609be4, var_b3b0478775da6eb0)
+    if var_b3b0478775da6eb0 == 0:
+        var_b3b0478775da6eb0 = max((-var_78ac692a457de231 for var_78ac692a457de231 in var_ece68b1c59b3b0e0))
+    var_f98a3a7fa1c5e086 = -var_b3b0478775da6eb0
+    return var_f98a3a7fa1c5e086","def task_id_31(nums):
+    state_3645 = 0
+    while state_3645 < 6:
+        if state_3645 == 0:
+            max_sum = 0
+            state_3645 += 1
+        if state_3645 == 1:
+            s = 0
+            state_3645 += 1
+        if state_3645 == 2:
+            for num in nums:
+                s += -num
+                if s < 0:
+                    s = 0
+                max_sum = max(s, max_sum)
+            state_3645 += 1
+        if state_3645 == 3:
+            if max_sum == 0:
+                max_sum = max((-i for i in nums))
+            state_3645 += 1
+        if state_3645 == 4:
+            min_sum = -max_sum
+            state_3645 += 1
+        if state_3645 == 5:
+            return min_sum
+            state_3645 += 1","def task_id_31(var_ece68b1c59b3b0e0):
+    state_6740 = 0
+    while state_6740 < 6:
+        if state_6740 == 0:
+            var_b3b0478775da6eb0 = 0
+            state_6740 += 1
+        if state_6740 == 1:
+            var_bc5ac4a37d609be4 = 0
+            state_6740 += 1
+        if state_6740 == 2:
+            for var_b6c8956926a2b368 in var_ece68b1c59b3b0e0:
+                var_bc5ac4a37d609be4 += -var_b6c8956926a2b368
+                if var_bc5ac4a37d609be4 < 0:
+                    var_bc5ac4a37d609be4 = 0
+                var_b3b0478775da6eb0 = max(var_bc5ac4a37d609be4, var_b3b0478775da6eb0)
+            state_6740 += 1
+        if state_6740 == 3:
+            if var_b3b0478775da6eb0 == 0:
+                var_b3b0478775da6eb0 = max((-var_78ac692a457de231 for var_78ac692a457de231 in var_ece68b1c59b3b0e0))
+            state_6740 += 1
+        if state_6740 == 4:
+            var_f98a3a7fa1c5e086 = -var_b3b0478775da6eb0
+            state_6740 += 1
+        if state_6740 == 5:
+            return var_f98a3a7fa1c5e086
+            state_6740 += 1",5,5,12,12
+"def task_id_32(s, n):
+    result = []
+    for word in s.split():
+        n_consonants = 0
+        for i in range(0, len(word)):
+            if word[i].lower() not in ['a', 'e', 'i', 'o', 'u']:
+                n_consonants += 1
+        if n_consonants == n:
+            result.append(word)
+    return result","def task_id_32(var_bc5ac4a37d609be4, var_68f8ea7d3b0bd13e):
+    var_0c32f554080e15d4 = []
+    for var_8a0efadfbf065191 in var_bc5ac4a37d609be4.split():
+        var_a61b3d34ea499728 = 0
+        for var_78ac692a457de231 in range(0, len(var_8a0efadfbf065191)):
+            if var_8a0efadfbf065191[var_78ac692a457de231].lower() not in ['a', 'e', 'i', 'o', 'u']:
+                var_a61b3d34ea499728 += 1
+        if var_a61b3d34ea499728 == var_68f8ea7d3b0bd13e:
+            var_0c32f554080e15d4.append(var_8a0efadfbf065191)
+    return var_0c32f554080e15d4","def task_id_32(s, n):
+    state_2463 = 0
+    while state_2463 < 3:
+        if state_2463 == 0:
+            result = []
+            state_2463 += 1
+        if state_2463 == 1:
+            for word in s.split():
+                n_consonants = 0
+                for i in range(0, len(word)):
+                    if word[i].lower() not in ['a', 'e', 'i', 'o', 'u']:
+                        n_consonants += 1
+                if n_consonants == n:
+                    result.append(word)
+            state_2463 += 1
+        if state_2463 == 2:
+            return result
+            state_2463 += 1","def task_id_32(var_bc5ac4a37d609be4, var_68f8ea7d3b0bd13e):
+    state_3843 = 0
+    while state_3843 < 3:
+        if state_3843 == 0:
+            var_0c32f554080e15d4 = []
+            state_3843 += 1
+        if state_3843 == 1:
+            for var_8a0efadfbf065191 in var_bc5ac4a37d609be4.split():
+                var_a61b3d34ea499728 = 0
+                for var_78ac692a457de231 in range(0, len(var_8a0efadfbf065191)):
+                    if var_8a0efadfbf065191[var_78ac692a457de231].lower() not in ['a', 'e', 'i', 'o', 'u']:
+                        var_a61b3d34ea499728 += 1
+                if var_a61b3d34ea499728 == var_68f8ea7d3b0bd13e:
+                    var_0c32f554080e15d4.append(var_8a0efadfbf065191)
+            state_3843 += 1
+        if state_3843 == 2:
+            return var_0c32f554080e15d4
+            state_3843 += 1",5,5,9,9
+"def task_id_33(word):
+    if len(word) < 3:
+        return ''
+    vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'O', 'U', 'I'}
+    for i in range(len(word) - 2, 0, -1):
+        if word[i] in vowels:
+            if word[i + 1] not in vowels and word[i - 1] not in vowels:
+                return word[i]
+    return ''","def task_id_33(var_8a0efadfbf065191):
+    if len(var_8a0efadfbf065191) < 3:
+        return ''
+    var_1852cbd690aff551 = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'O', 'U', 'I'}
+    for var_78ac692a457de231 in range(len(var_8a0efadfbf065191) - 2, 0, -1):
+        if var_8a0efadfbf065191[var_78ac692a457de231] in var_1852cbd690aff551:
+            if var_8a0efadfbf065191[var_78ac692a457de231 + 1] not in var_1852cbd690aff551 and var_8a0efadfbf065191[var_78ac692a457de231 - 1] not in var_1852cbd690aff551:
+                return var_8a0efadfbf065191[var_78ac692a457de231]
+    return ''","def task_id_33(word):
+    state_1122 = 0
+    while state_1122 < 4:
+        if state_1122 == 0:
+            if len(word) < 3:
+                return ''
+            state_1122 += 1
+        if state_1122 == 1:
+            vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'O', 'U', 'I'}
+            state_1122 += 1
+        if state_1122 == 2:
+            for i in range(len(word) - 2, 0, -1):
+                if word[i] in vowels:
+                    if word[i + 1] not in vowels and word[i - 1] not in vowels:
+                        return word[i]
+            state_1122 += 1
+        if state_1122 == 3:
+            return ''
+            state_1122 += 1","def task_id_33(var_8a0efadfbf065191):
+    state_2794 = 0
+    while state_2794 < 4:
+        if state_2794 == 0:
+            if len(var_8a0efadfbf065191) < 3:
+                return ''
+            state_2794 += 1
+        if state_2794 == 1:
+            var_1852cbd690aff551 = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'O', 'U', 'I'}
+            state_2794 += 1
+        if state_2794 == 2:
+            for var_78ac692a457de231 in range(len(var_8a0efadfbf065191) - 2, 0, -1):
+                if var_8a0efadfbf065191[var_78ac692a457de231] in var_1852cbd690aff551:
+                    if var_8a0efadfbf065191[var_78ac692a457de231 + 1] not in var_1852cbd690aff551 and var_8a0efadfbf065191[var_78ac692a457de231 - 1] not in var_1852cbd690aff551:
+                        return var_8a0efadfbf065191[var_78ac692a457de231]
+            state_2794 += 1
+        if state_2794 == 3:
+            return ''
+            state_2794 += 1",6,6,11,11
+"def task_id_34(lst):
+    return sum([x for idx, x in enumerate(lst) if idx % 2 == 0 and x % 2 == 1])","def task_id_34(var_898f776ec15790a6):
+    return sum([var_e472c5e394f30ff8 for var_3868617adabb9cc3, var_e472c5e394f30ff8 in enumerate(var_898f776ec15790a6) if var_3868617adabb9cc3 % 2 == 0 and var_e472c5e394f30ff8 % 2 == 1])","def task_id_34(lst):
+    state_3767 = 0
+    while state_3767 < 1:
+        if state_3767 == 0:
+            return sum([x for idx, x in enumerate(lst) if idx % 2 == 0 and x % 2 == 1])
+            state_3767 += 1","def task_id_34(var_898f776ec15790a6):
+    state_7691 = 0
+    while state_7691 < 1:
+        if state_7691 == 0:
+            return sum([var_e472c5e394f30ff8 for var_3868617adabb9cc3, var_e472c5e394f30ff8 in enumerate(var_898f776ec15790a6) if var_3868617adabb9cc3 % 2 == 0 and var_e472c5e394f30ff8 % 2 == 1])
+            state_7691 += 1",4,4,6,6
+"def task_id_35(txt):
+    if ' ' in txt:
+        return txt.split()
+    elif ',' in txt:
+        return txt.replace(',', ' ').split()
+    else:
+        return len([i for i in txt if i.islower() and ord(i) % 2 == 0])","def task_id_35(var_b8b7b9af4f4fd173):
+    if ' ' in var_b8b7b9af4f4fd173:
+        return var_b8b7b9af4f4fd173.split()
+    elif ',' in var_b8b7b9af4f4fd173:
+        return var_b8b7b9af4f4fd173.replace(',', ' ').split()
+    else:
+        return len([var_78ac692a457de231 for var_78ac692a457de231 in var_b8b7b9af4f4fd173 if var_78ac692a457de231.islower() and ord(var_78ac692a457de231) % 2 == 0])","def task_id_35(txt):
+    state_4643 = 0
+    while state_4643 < 1:
+        if state_4643 == 0:
+            if ' ' in txt:
+                return txt.split()
+            elif ',' in txt:
+                return txt.replace(',', ' ').split()
+            else:
+                return len([i for i in txt if i.islower() and ord(i) % 2 == 0])
+            state_4643 += 1","def task_id_35(var_b8b7b9af4f4fd173):
+    state_1218 = 0
+    while state_1218 < 1:
+        if state_1218 == 0:
+            if ' ' in var_b8b7b9af4f4fd173:
+                return var_b8b7b9af4f4fd173.split()
+            elif ',' in var_b8b7b9af4f4fd173:
+                return var_b8b7b9af4f4fd173.replace(',', ' ').split()
+            else:
+                return len([var_78ac692a457de231 for var_78ac692a457de231 in var_b8b7b9af4f4fd173 if var_78ac692a457de231.islower() and ord(var_78ac692a457de231) % 2 == 0])
+            state_1218 += 1",6,6,8,8
+"def task_id_36(lst):
+    count_digit = dict([(i, 0) for i in lst])
+    for i in lst:
+        count_digit[i] += 1
+    if any((count_digit[i] > 2 for i in lst)):
+        return False
+    if all((lst[i - 1] <= lst[i] for i in range(1, len(lst)))):
+        return True
+    else:
+        return False","def task_id_36(var_898f776ec15790a6):
+    var_1509261ed5686511 = dict([(var_78ac692a457de231, 0) for var_78ac692a457de231 in var_898f776ec15790a6])
+    for var_78ac692a457de231 in var_898f776ec15790a6:
+        var_1509261ed5686511[var_78ac692a457de231] += 1
+    if any((var_1509261ed5686511[var_78ac692a457de231] > 2 for var_78ac692a457de231 in var_898f776ec15790a6)):
+        return False
+    if all((var_898f776ec15790a6[var_78ac692a457de231 - 1] <= var_898f776ec15790a6[var_78ac692a457de231] for var_78ac692a457de231 in range(1, len(var_898f776ec15790a6)))):
+        return True
+    else:
+        return False","def task_id_36(lst):
+    state_2018 = 0
+    while state_2018 < 4:
+        if state_2018 == 0:
+            count_digit = dict([(i, 0) for i in lst])
+            state_2018 += 1
+        if state_2018 == 1:
+            for i in lst:
+                count_digit[i] += 1
+            state_2018 += 1
+        if state_2018 == 2:
+            if any((count_digit[i] > 2 for i in lst)):
+                return False
+            state_2018 += 1
+        if state_2018 == 3:
+            if all((lst[i - 1] <= lst[i] for i in range(1, len(lst)))):
+                return True
+            else:
+                return False
+            state_2018 += 1","def task_id_36(var_898f776ec15790a6):
+    state_7435 = 0
+    while state_7435 < 4:
+        if state_7435 == 0:
+            var_1509261ed5686511 = dict([(var_78ac692a457de231, 0) for var_78ac692a457de231 in var_898f776ec15790a6])
+            state_7435 += 1
+        if state_7435 == 1:
+            for var_78ac692a457de231 in var_898f776ec15790a6:
+                var_1509261ed5686511[var_78ac692a457de231] += 1
+            state_7435 += 1
+        if state_7435 == 2:
+            if any((var_1509261ed5686511[var_78ac692a457de231] > 2 for var_78ac692a457de231 in var_898f776ec15790a6)):
+                return False
+            state_7435 += 1
+        if state_7435 == 3:
+            if all((var_898f776ec15790a6[var_78ac692a457de231 - 1] <= var_898f776ec15790a6[var_78ac692a457de231] for var_78ac692a457de231 in range(1, len(var_898f776ec15790a6)))):
+                return True
+            else:
+                return False
+            state_7435 += 1",7,7,12,12
+"def task_id_37(arr):
+    if not arr:
+        return None
+    prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+    return prod * sum([abs(i) for i in arr])","def task_id_37(var_0239d166a22ea7af):
+    if not var_0239d166a22ea7af:
+        return None
+    var_71a0db500ba90136 = 0 if 0 in var_0239d166a22ea7af else (-1) ** len(list(filter(lambda var_e472c5e394f30ff8: var_e472c5e394f30ff8 < 0, var_0239d166a22ea7af)))
+    return var_71a0db500ba90136 * sum([abs(var_78ac692a457de231) for var_78ac692a457de231 in var_0239d166a22ea7af])","def task_id_37(arr):
+    state_1189 = 0
+    while state_1189 < 3:
+        if state_1189 == 0:
+            if not arr:
+                return None
+            state_1189 += 1
+        if state_1189 == 1:
+            prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))
+            state_1189 += 1
+        if state_1189 == 2:
+            return prod * sum([abs(i) for i in arr])
+            state_1189 += 1","def task_id_37(var_0239d166a22ea7af):
+    state_2047 = 0
+    while state_2047 < 3:
+        if state_2047 == 0:
+            if not var_0239d166a22ea7af:
+                return None
+            state_2047 += 1
+        if state_2047 == 1:
+            var_71a0db500ba90136 = 0 if 0 in var_0239d166a22ea7af else (-1) ** len(list(filter(lambda var_e472c5e394f30ff8: var_e472c5e394f30ff8 < 0, var_0239d166a22ea7af)))
+            state_2047 += 1
+        if state_2047 == 2:
+            return var_71a0db500ba90136 * sum([abs(var_78ac692a457de231) for var_78ac692a457de231 in var_0239d166a22ea7af])
+            state_2047 += 1",4,4,8,8
+"def task_id_38(n):
+    if n == 0:
+        return [1]
+    my_tri = [1, 3]
+    for i in range(2, n + 1):
+        if i % 2 == 0:
+            my_tri.append(i / 2 + 1)
+        else:
+            my_tri.append(my_tri[i - 1] + my_tri[i - 2] + (i + 3) / 2)
+    return my_tri","def task_id_38(var_68f8ea7d3b0bd13e):
+    if var_68f8ea7d3b0bd13e == 0:
+        return [1]
+    var_5b60941d8a2b2a8a = [1, 3]
+    for var_78ac692a457de231 in range(2, var_68f8ea7d3b0bd13e + 1):
+        if var_78ac692a457de231 % 2 == 0:
+            var_5b60941d8a2b2a8a.append(var_78ac692a457de231 / 2 + 1)
+        else:
+            var_5b60941d8a2b2a8a.append(var_5b60941d8a2b2a8a[var_78ac692a457de231 - 1] + var_5b60941d8a2b2a8a[var_78ac692a457de231 - 2] + (var_78ac692a457de231 + 3) / 2)
+    return var_5b60941d8a2b2a8a","def task_id_38(n):
+    state_7094 = 0
+    while state_7094 < 4:
+        if state_7094 == 0:
+            if n == 0:
+                return [1]
+            state_7094 += 1
+        if state_7094 == 1:
+            my_tri = [1, 3]
+            state_7094 += 1
+        if state_7094 == 2:
+            for i in range(2, n + 1):
+                if i % 2 == 0:
+                    my_tri.append(i / 2 + 1)
+                else:
+                    my_tri.append(my_tri[i - 1] + my_tri[i - 2] + (i + 3) / 2)
+            state_7094 += 1
+        if state_7094 == 3:
+            return my_tri
+            state_7094 += 1","def task_id_38(var_68f8ea7d3b0bd13e):
+    state_2343 = 0
+    while state_2343 < 4:
+        if state_2343 == 0:
+            if var_68f8ea7d3b0bd13e == 0:
+                return [1]
+            state_2343 += 1
+        if state_2343 == 1:
+            var_5b60941d8a2b2a8a = [1, 3]
+            state_2343 += 1
+        if state_2343 == 2:
+            for var_78ac692a457de231 in range(2, var_68f8ea7d3b0bd13e + 1):
+                if var_78ac692a457de231 % 2 == 0:
+                    var_5b60941d8a2b2a8a.append(var_78ac692a457de231 / 2 + 1)
+                else:
+                    var_5b60941d8a2b2a8a.append(var_5b60941d8a2b2a8a[var_78ac692a457de231 - 1] + var_5b60941d8a2b2a8a[var_78ac692a457de231 - 2] + (var_78ac692a457de231 + 3) / 2)
+            state_2343 += 1
+        if state_2343 == 3:
+            return var_5b60941d8a2b2a8a
+            state_2343 += 1",4,4,9,9
+"def task_id_39(n):
+    product = 1
+    odd_count = 0
+    for digit in str(n):
+        int_digit = int(digit)
+        if int_digit % 2 == 1:
+            product = product * int_digit
+            odd_count += 1
+    if odd_count == 0:
+        return 0
+    else:
+        return product","def task_id_39(var_68f8ea7d3b0bd13e):
+    var_384d6c580e22376b = 1
+    var_489db06457fbb102 = 0
+    for var_2d99013a8d76e345 in str(var_68f8ea7d3b0bd13e):
+        var_6296e6b6052d59a6 = int(var_2d99013a8d76e345)
+        if var_6296e6b6052d59a6 % 2 == 1:
+            var_384d6c580e22376b = var_384d6c580e22376b * var_6296e6b6052d59a6
+            var_489db06457fbb102 += 1
+    if var_489db06457fbb102 == 0:
+        return 0
+    else:
+        return var_384d6c580e22376b","def task_id_39(n):
+    state_9906 = 0
+    while state_9906 < 4:
+        if state_9906 == 0:
+            product = 1
+            state_9906 += 1
+        if state_9906 == 1:
+            odd_count = 0
+            state_9906 += 1
+        if state_9906 == 2:
+            for digit in str(n):
+                int_digit = int(digit)
+                if int_digit % 2 == 1:
+                    product = product * int_digit
+                    odd_count += 1
+            state_9906 += 1
+        if state_9906 == 3:
+            if odd_count == 0:
+                return 0
+            else:
+                return product
+            state_9906 += 1","def task_id_39(var_68f8ea7d3b0bd13e):
+    state_2501 = 0
+    while state_2501 < 4:
+        if state_2501 == 0:
+            var_384d6c580e22376b = 1
+            state_2501 += 1
+        if state_2501 == 1:
+            var_489db06457fbb102 = 0
+            state_2501 += 1
+        if state_2501 == 2:
+            for var_2d99013a8d76e345 in str(var_68f8ea7d3b0bd13e):
+                var_6296e6b6052d59a6 = int(var_2d99013a8d76e345)
+                if var_6296e6b6052d59a6 % 2 == 1:
+                    var_384d6c580e22376b = var_384d6c580e22376b * var_6296e6b6052d59a6
+                    var_489db06457fbb102 += 1
+            state_2501 += 1
+        if state_2501 == 3:
+            if var_489db06457fbb102 == 0:
+                return 0
+            else:
+                return var_384d6c580e22376b
+            state_2501 += 1",4,4,9,9
+"def task_id_40(a, b):
+    temp_a, temp_b = (a, b)
+    if isinstance(temp_a, str):
+        temp_a = temp_a.replace(',', '.')
+    if isinstance(temp_b, str):
+        temp_b = temp_b.replace(',', '.')
+    if float(temp_a) == float(temp_b):
+        return None
+    return a if float(temp_a) > float(temp_b) else b","def task_id_40(var_85c8de88d28866bf, var_f0ffa34335ef979f):
+    var_ce9f318c5d2aa240, var_fcbfb3a7116dfd50 = (var_85c8de88d28866bf, var_f0ffa34335ef979f)
+    if isinstance(var_ce9f318c5d2aa240, str):
+        var_ce9f318c5d2aa240 = var_ce9f318c5d2aa240.replace(',', '.')
+    if isinstance(var_fcbfb3a7116dfd50, str):
+        var_fcbfb3a7116dfd50 = var_fcbfb3a7116dfd50.replace(',', '.')
+    if float(var_ce9f318c5d2aa240) == float(var_fcbfb3a7116dfd50):
+        return None
+    return var_85c8de88d28866bf if float(var_ce9f318c5d2aa240) > float(var_fcbfb3a7116dfd50) else var_f0ffa34335ef979f","def task_id_40(a, b):
+    state_3545 = 0
+    while state_3545 < 5:
+        if state_3545 == 0:
+            temp_a, temp_b = (a, b)
+            state_3545 += 1
+        if state_3545 == 1:
+            if isinstance(temp_a, str):
+                temp_a = temp_a.replace(',', '.')
+            state_3545 += 1
+        if state_3545 == 2:
+            if isinstance(temp_b, str):
+                temp_b = temp_b.replace(',', '.')
+            state_3545 += 1
+        if state_3545 == 3:
+            if float(temp_a) == float(temp_b):
+                return None
+            state_3545 += 1
+        if state_3545 == 4:
+            return a if float(temp_a) > float(temp_b) else b
+            state_3545 += 1","def task_id_40(var_85c8de88d28866bf, var_f0ffa34335ef979f):
+    state_7443 = 0
+    while state_7443 < 5:
+        if state_7443 == 0:
+            var_ce9f318c5d2aa240, var_fcbfb3a7116dfd50 = (var_85c8de88d28866bf, var_f0ffa34335ef979f)
+            state_7443 += 1
+        if state_7443 == 1:
+            if isinstance(var_ce9f318c5d2aa240, str):
+                var_ce9f318c5d2aa240 = var_ce9f318c5d2aa240.replace(',', '.')
+            state_7443 += 1
+        if state_7443 == 2:
+            if isinstance(var_fcbfb3a7116dfd50, str):
+                var_fcbfb3a7116dfd50 = var_fcbfb3a7116dfd50.replace(',', '.')
+            state_7443 += 1
+        if state_7443 == 3:
+            if float(var_ce9f318c5d2aa240) == float(var_fcbfb3a7116dfd50):
+                return None
+            state_7443 += 1
+        if state_7443 == 4:
+            return var_85c8de88d28866bf if float(var_ce9f318c5d2aa240) > float(var_fcbfb3a7116dfd50) else var_f0ffa34335ef979f
+            state_7443 += 1",5,5,11,11
+,,,,0,0,0,0
+"def task_id_42(sentence):
+    new_lst = []
+    for word in sentence.split():
+        flg = 0
+        if len(word) == 1:
+            flg = 1
+        for i in range(2, len(word)):
+            if len(word) % i == 0:
+                flg = 1
+        if flg == 0 or len(word) == 2:
+            new_lst.append(word)
+    return ' '.join(new_lst)","def task_id_42(var_9d6d5a9eb3b9412d):
+    var_075691005014f4f9 = []
+    for var_8a0efadfbf065191 in var_9d6d5a9eb3b9412d.split():
+        var_c5affd15e872c1ee = 0
+        if len(var_8a0efadfbf065191) == 1:
+            var_c5affd15e872c1ee = 1
+        for var_78ac692a457de231 in range(2, len(var_8a0efadfbf065191)):
+            if len(var_8a0efadfbf065191) % var_78ac692a457de231 == 0:
+                var_c5affd15e872c1ee = 1
+        if var_c5affd15e872c1ee == 0 or len(var_8a0efadfbf065191) == 2:
+            var_075691005014f4f9.append(var_8a0efadfbf065191)
+    return ' '.join(var_075691005014f4f9)","def task_id_42(sentence):
+    state_4875 = 0
+    while state_4875 < 3:
+        if state_4875 == 0:
+            new_lst = []
+            state_4875 += 1
+        if state_4875 == 1:
+            for word in sentence.split():
+                flg = 0
+                if len(word) == 1:
+                    flg = 1
+                for i in range(2, len(word)):
+                    if len(word) % i == 0:
+                        flg = 1
+                if flg == 0 or len(word) == 2:
+                    new_lst.append(word)
+            state_4875 += 1
+        if state_4875 == 2:
+            return ' '.join(new_lst)
+            state_4875 += 1","def task_id_42(var_9d6d5a9eb3b9412d):
+    state_5131 = 0
+    while state_5131 < 3:
+        if state_5131 == 0:
+            var_075691005014f4f9 = []
+            state_5131 += 1
+        if state_5131 == 1:
+            for var_8a0efadfbf065191 in var_9d6d5a9eb3b9412d.split():
+                var_c5affd15e872c1ee = 0
+                if len(var_8a0efadfbf065191) == 1:
+                    var_c5affd15e872c1ee = 1
+                for var_78ac692a457de231 in range(2, len(var_8a0efadfbf065191)):
+                    if len(var_8a0efadfbf065191) % var_78ac692a457de231 == 0:
+                        var_c5affd15e872c1ee = 1
+                if var_c5affd15e872c1ee == 0 or len(var_8a0efadfbf065191) == 2:
+                    var_075691005014f4f9.append(var_8a0efadfbf065191)
+            state_5131 += 1
+        if state_5131 == 2:
+            return ' '.join(var_075691005014f4f9)
+            state_5131 += 1",7,7,11,11
+"def task_id_43(nums):
+    count = 0
+    for num in nums:
+        if num > 10:
+            odd_digits = (1, 3, 5, 7, 9)
+            number_as_string = str(num)
+            if int(number_as_string[0]) in odd_digits and int(number_as_string[-1]) in odd_digits:
+                count += 1
+    return count","def task_id_43(var_ece68b1c59b3b0e0):
+    var_628e204144e3c3dd = 0
+    for var_b6c8956926a2b368 in var_ece68b1c59b3b0e0:
+        if var_b6c8956926a2b368 > 10:
+            var_f868341fa5117aa0 = (1, 3, 5, 7, 9)
+            var_8a5e719f55b89c3e = str(var_b6c8956926a2b368)
+            if int(var_8a5e719f55b89c3e[0]) in var_f868341fa5117aa0 and int(var_8a5e719f55b89c3e[-1]) in var_f868341fa5117aa0:
+                var_628e204144e3c3dd += 1
+    return var_628e204144e3c3dd","def task_id_43(nums):
+    state_7857 = 0
+    while state_7857 < 3:
+        if state_7857 == 0:
+            count = 0
+            state_7857 += 1
+        if state_7857 == 1:
+            for num in nums:
+                if num > 10:
+                    odd_digits = (1, 3, 5, 7, 9)
+                    number_as_string = str(num)
+                    if int(number_as_string[0]) in odd_digits and int(number_as_string[-1]) in odd_digits:
+                        count += 1
+            state_7857 += 1
+        if state_7857 == 2:
+            return count
+            state_7857 += 1","def task_id_43(var_ece68b1c59b3b0e0):
+    state_7503 = 0
+    while state_7503 < 3:
+        if state_7503 == 0:
+            var_628e204144e3c3dd = 0
+            state_7503 += 1
+        if state_7503 == 1:
+            for var_b6c8956926a2b368 in var_ece68b1c59b3b0e0:
+                if var_b6c8956926a2b368 > 10:
+                    var_f868341fa5117aa0 = (1, 3, 5, 7, 9)
+                    var_8a5e719f55b89c3e = str(var_b6c8956926a2b368)
+                    if int(var_8a5e719f55b89c3e[0]) in var_f868341fa5117aa0 and int(var_8a5e719f55b89c3e[-1]) in var_f868341fa5117aa0:
+                        var_628e204144e3c3dd += 1
+            state_7503 += 1
+        if state_7503 == 2:
+            return var_628e204144e3c3dd
+            state_7503 += 1",5,5,9,9
+"def task_id_44(n):
+    A = [i * i - i + 1 for i in range(1, n + 1)]
+    ans = []
+    for i in range(n):
+        for j in range(i + 1, n):
+            for k in range(j + 1, n):
+                if (A[i] + A[j] + A[k]) % 3 == 0:
+                    ans += [(A[i], A[j], A[k])]
+    return len(ans)","def task_id_44(var_68f8ea7d3b0bd13e):
+    var_a5ba3aeee1525b4a = [var_78ac692a457de231 * var_78ac692a457de231 - var_78ac692a457de231 + 1 for var_78ac692a457de231 in range(1, var_68f8ea7d3b0bd13e + 1)]
+    var_7e8e845eb38b31d3 = []
+    for var_78ac692a457de231 in range(var_68f8ea7d3b0bd13e):
+        for var_60e284f4daedb9f6 in range(var_78ac692a457de231 + 1, var_68f8ea7d3b0bd13e):
+            for var_ac20c8330b5c6c16 in range(var_60e284f4daedb9f6 + 1, var_68f8ea7d3b0bd13e):
+                if (var_a5ba3aeee1525b4a[var_78ac692a457de231] + var_a5ba3aeee1525b4a[var_60e284f4daedb9f6] + var_a5ba3aeee1525b4a[var_ac20c8330b5c6c16]) % 3 == 0:
+                    var_7e8e845eb38b31d3 += [(var_a5ba3aeee1525b4a[var_78ac692a457de231], var_a5ba3aeee1525b4a[var_60e284f4daedb9f6], var_a5ba3aeee1525b4a[var_ac20c8330b5c6c16])]
+    return len(var_7e8e845eb38b31d3)","def task_id_44(n):
+    state_2219 = 0
+    while state_2219 < 4:
+        if state_2219 == 0:
+            A = [i * i - i + 1 for i in range(1, n + 1)]
+            state_2219 += 1
+        if state_2219 == 1:
+            ans = []
+            state_2219 += 1
+        if state_2219 == 2:
+            for i in range(n):
+                for j in range(i + 1, n):
+                    for k in range(j + 1, n):
+                        if (A[i] + A[j] + A[k]) % 3 == 0:
+                            ans += [(A[i], A[j], A[k])]
+            state_2219 += 1
+        if state_2219 == 3:
+            return len(ans)
+            state_2219 += 1","def task_id_44(var_68f8ea7d3b0bd13e):
+    state_5024 = 0
+    while state_5024 < 4:
+        if state_5024 == 0:
+            var_a5ba3aeee1525b4a = [var_78ac692a457de231 * var_78ac692a457de231 - var_78ac692a457de231 + 1 for var_78ac692a457de231 in range(1, var_68f8ea7d3b0bd13e + 1)]
+            state_5024 += 1
+        if state_5024 == 1:
+            var_7e8e845eb38b31d3 = []
+            state_5024 += 1
+        if state_5024 == 2:
+            for var_78ac692a457de231 in range(var_68f8ea7d3b0bd13e):
+                for var_60e284f4daedb9f6 in range(var_78ac692a457de231 + 1, var_68f8ea7d3b0bd13e):
+                    for var_ac20c8330b5c6c16 in range(var_60e284f4daedb9f6 + 1, var_68f8ea7d3b0bd13e):
+                        if (var_a5ba3aeee1525b4a[var_78ac692a457de231] + var_a5ba3aeee1525b4a[var_60e284f4daedb9f6] + var_a5ba3aeee1525b4a[var_ac20c8330b5c6c16]) % 3 == 0:
+                            var_7e8e845eb38b31d3 += [(var_a5ba3aeee1525b4a[var_78ac692a457de231], var_a5ba3aeee1525b4a[var_60e284f4daedb9f6], var_a5ba3aeee1525b4a[var_ac20c8330b5c6c16])]
+            state_5024 += 1
+        if state_5024 == 3:
+            return len(var_7e8e845eb38b31d3)
+            state_5024 += 1",6,6,11,11
+"def task_id_45(planet1, planet2):
+    planet_names = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune')
+    if planet1 not in planet_names or planet2 not in planet_names or planet1 == planet2:
+        return ()
+    planet1_index = planet_names.index(planet1)
+    planet2_index = planet_names.index(planet2)
+    if planet1_index < planet2_index:
+        return planet_names[planet1_index + 1:planet2_index]
+    else:
+        return planet_names[planet2_index + 1:planet1_index]","def task_id_45(var_1e994e6b73dfb5bd, var_579a12d226d447b8):
+    var_a1127e5fa90fca72 = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune')
+    if var_1e994e6b73dfb5bd not in var_a1127e5fa90fca72 or var_579a12d226d447b8 not in var_a1127e5fa90fca72 or var_1e994e6b73dfb5bd == var_579a12d226d447b8:
+        return ()
+    var_29ea9d436d162401 = var_a1127e5fa90fca72.index(var_1e994e6b73dfb5bd)
+    var_67ca14dac37b12fa = var_a1127e5fa90fca72.index(var_579a12d226d447b8)
+    if var_29ea9d436d162401 < var_67ca14dac37b12fa:
+        return var_a1127e5fa90fca72[var_29ea9d436d162401 + 1:var_67ca14dac37b12fa]
+    else:
+        return var_a1127e5fa90fca72[var_67ca14dac37b12fa + 1:var_29ea9d436d162401]","def task_id_45(planet1, planet2):
+    state_7199 = 0
+    while state_7199 < 5:
+        if state_7199 == 0:
+            planet_names = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune')
+            state_7199 += 1
+        if state_7199 == 1:
+            if planet1 not in planet_names or planet2 not in planet_names or planet1 == planet2:
+                return ()
+            state_7199 += 1
+        if state_7199 == 2:
+            planet1_index = planet_names.index(planet1)
+            state_7199 += 1
+        if state_7199 == 3:
+            planet2_index = planet_names.index(planet2)
+            state_7199 += 1
+        if state_7199 == 4:
+            if planet1_index < planet2_index:
+                return planet_names[planet1_index + 1:planet2_index]
+            else:
+                return planet_names[planet2_index + 1:planet1_index]
+            state_7199 += 1","def task_id_45(var_1e994e6b73dfb5bd, var_579a12d226d447b8):
+    state_7810 = 0
+    while state_7810 < 5:
+        if state_7810 == 0:
+            var_a1127e5fa90fca72 = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune')
+            state_7810 += 1
+        if state_7810 == 1:
+            if var_1e994e6b73dfb5bd not in var_a1127e5fa90fca72 or var_579a12d226d447b8 not in var_a1127e5fa90fca72 or var_1e994e6b73dfb5bd == var_579a12d226d447b8:
+                return ()
+            state_7810 += 1
+        if state_7810 == 2:
+            var_29ea9d436d162401 = var_a1127e5fa90fca72.index(var_1e994e6b73dfb5bd)
+            state_7810 += 1
+        if state_7810 == 3:
+            var_67ca14dac37b12fa = var_a1127e5fa90fca72.index(var_579a12d226d447b8)
+            state_7810 += 1
+        if state_7810 == 4:
+            if var_29ea9d436d162401 < var_67ca14dac37b12fa:
+                return var_a1127e5fa90fca72[var_29ea9d436d162401 + 1:var_67ca14dac37b12fa]
+            else:
+                return var_a1127e5fa90fca72[var_67ca14dac37b12fa + 1:var_29ea9d436d162401]
+            state_7810 += 1",5,5,11,11
+"def task_id_46(n, x, y):
+    if n == 1:
+        return y
+    for i in range(2, n):
+        if n % i == 0:
+            return y
+            break
+    else:
+        return x","def task_id_46(var_68f8ea7d3b0bd13e, var_e472c5e394f30ff8, var_4cccd98df122b073):
+    if var_68f8ea7d3b0bd13e == 1:
+        return var_4cccd98df122b073
+    for var_78ac692a457de231 in range(2, var_68f8ea7d3b0bd13e):
+        if var_68f8ea7d3b0bd13e % var_78ac692a457de231 == 0:
+            return var_4cccd98df122b073
+            break
+    else:
+        return var_e472c5e394f30ff8","def task_id_46(n, x, y):
+    state_5453 = 0
+    while state_5453 < 2:
+        if state_5453 == 0:
+            if n == 1:
+                return y
+            state_5453 += 1
+        if state_5453 == 1:
+            for i in range(2, n):
+                if n % i == 0:
+                    return y
+                    break
+            else:
+                return x
+            state_5453 += 1","def task_id_46(var_68f8ea7d3b0bd13e, var_e472c5e394f30ff8, var_4cccd98df122b073):
+    state_7008 = 0
+    while state_7008 < 2:
+        if state_7008 == 0:
+            if var_68f8ea7d3b0bd13e == 1:
+                return var_4cccd98df122b073
+            state_7008 += 1
+        if state_7008 == 1:
+            for var_78ac692a457de231 in range(2, var_68f8ea7d3b0bd13e):
+                if var_68f8ea7d3b0bd13e % var_78ac692a457de231 == 0:
+                    return var_4cccd98df122b073
+                    break
+            else:
+                return var_e472c5e394f30ff8
+            state_7008 += 1",4,4,7,7
+"def task_id_47(lst):
+    return sum([i ** 2 for i in lst if i > 0 and i % 2 != 0 and ('.' not in str(i))])","def task_id_47(var_898f776ec15790a6):
+    return sum([var_78ac692a457de231 ** 2 for var_78ac692a457de231 in var_898f776ec15790a6 if var_78ac692a457de231 > 0 and var_78ac692a457de231 % 2 != 0 and ('.' not in str(var_78ac692a457de231))])","def task_id_47(lst):
+    state_9600 = 0
+    while state_9600 < 1:
+        if state_9600 == 0:
+            return sum([i ** 2 for i in lst if i > 0 and i % 2 != 0 and ('.' not in str(i))])
+            state_9600 += 1","def task_id_47(var_898f776ec15790a6):
+    state_7769 = 0
+    while state_7769 < 1:
+        if state_7769 == 0:
+            return sum([var_78ac692a457de231 ** 2 for var_78ac692a457de231 in var_898f776ec15790a6 if var_78ac692a457de231 > 0 and var_78ac692a457de231 % 2 != 0 and ('.' not in str(var_78ac692a457de231))])
+            state_7769 += 1",5,5,7,7
