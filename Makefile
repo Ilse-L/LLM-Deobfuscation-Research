@@ -1,6 +1,7 @@
 REPO = https://github.com/spyboy-productions/ObfuXtreme.git
 REPO_DIR = ObfuXtreme
 URL = https:/raw.githubusercontent.com/Ilse-L/LLM-Deobfuscation-Research/main/obf_cli.py
+FILE = obf_cli.py
 
 all: 
 	clone install fetch
@@ -15,6 +16,7 @@ clone:
 install: clone
 	pip install -r $(REPO_DIR)/requirements.txt
 fetch:
-	curl -L -o obf_cli.py $(URL)
+	curl -L -o $(FILE) $(URL)
 clean:
-	rm -rf $(REPO_DIR) ob_cli.py
+	rm -rf $(REPO_DIR) $(FILE)
+
