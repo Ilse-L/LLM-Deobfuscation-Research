@@ -4,7 +4,7 @@ URL = https:/raw.githubusercontent.com/Ilse-L/LLM-Deobfuscation-Research/main/ob
 FILE = obf_cli.py
 
 all: 
-	clone install fetch
+	install fetch
 
 clone:
 	@if [ -d "$(REPO_DIR)" ]; then \
@@ -19,4 +19,5 @@ fetch:
 	curl -L -o $(FILE) $(URL)
 clean:
 	rm -rf $(REPO_DIR) $(FILE)
+
 
